@@ -1,0 +1,158 @@
+﻿/*
+    -.menu-dashboard
+    */
+
+
+/* Section - main-slider */
+section.main-slider {
+    background: url("/Images/solarHome.jpg") no-repeat center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.main-slider .main-logo img {
+    width: 100%;    
+}
+
+section.main-slider .main-logo {
+    position: absolute;
+    margin: 250px 40%;
+}
+
+section.main-slider .main-logo h1 {
+    
+    font-family: Broadway;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+/* Section - box-menu */
+section.box-menu{
+    position: relative;    
+    /*width: 100vw;*/
+    height: 100%;
+    padding: 40px 20px; 
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+section.box-menu .thumbnail {
+    display: inline-block;
+    width: 100%;
+    padding: 25px;    
+}
+
+section.box-menu .thumbnail .caption {
+    display: inline-block;
+    float: left;
+    min-width: 150px;
+    max-width: 60%;
+    height: 250px;
+    padding: 40px 0px;
+    text-align: left;
+    color: #7E7E7E;    
+}
+
+section.box-menu .thumbnail:hover .caption{
+    color: #323232;
+}
+
+section.box-menu .thumbnail .caption h2 {
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+    line-height: 40px;
+}
+
+section.box-menu .thumbnail img {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    margin: 40px 0px;
+}
+
+/* Filter - sepia */
+.sepia-filter {
+  -moz-filter: sepia(100%); 
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.grayscale-filter {
+    -moz-filter: grayscale();
+    -webkit-filter: grayscale();
+    filter: grayscale();
+}
+
+.dark-filter {
+    /*width: 100vw;*/
+    height: 100vh;
+    background-color: #000;
+    opacity: .2;
+}
+
+.contrast-filter {
+    -moz-filter: contrast(2);
+    -webkit-filter: contrast(2);
+    filter: contrast(2);
+}
+
+.blur-filter {
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+[class*="filter"]:hover {
+    -moz-filter: none;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.basic-gradient {
+    height: 100%;
+    background: rgb(250,66,65); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%, rgba(255,255,0,.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(250,66,65,.8)), color-stop(100%,rgba(255,255,0,.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4241', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+.text-wrap {
+    margin-bottom: 25px;
+}
+
+.text-wrap h3 {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.text-wrap h4 {
+    /*display: inline-block;*/
+    border-bottom: 1px solid #DDD;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+/***** Class - box-info *****/
+.box-info {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    padding: 20px;
+    background-color: #337AB7;
+    text-align: center;
+}
+
+.box-info > p {
+    font-size: 30px;
+    font-weight: 700;
+}

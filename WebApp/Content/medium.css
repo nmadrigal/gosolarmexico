@@ -1,0 +1,24 @@
+﻿#brand-header {
+    font-size: x-large;
+}
+
+#div-header {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#main-menu {
+    font-size: smaller;
+}
+
+.img-menu {
+    width: 90px;
+    height: 90px;
+}
+
+
+@media screen and (min-width: 800px) {
+    #main-menu {
+        font-size: small;
+    }
+}

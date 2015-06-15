@@ -1,0 +1,90 @@
+﻿@using WebApp.ServiceReference1
+
+@{
+    ViewBag.Title = "Cerca de mi";
+}
+
+<div class="container-fluid" style="text-align: center; margin-top: 10px">
+    <div @*class="row-fluid"*@ style="position: relative;padding-bottom: 100%;padding-top: 120px;height: 0;overflow: hidden">
+        <div id="googleMap" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function InitializeMap() {
+        var geocoder = new google.maps.Geocoder();
+        var mapCanvas = document.getElementById('googleMap');
+        var mapOptions = { center: new google.maps.LatLng(25.6409808, -100.3127018), zoom: 16 }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var ambassadorIcon = '../Images/blue_star_icon.png';
+        var referredIcon = "../Images/user_icon.png";
+
+        @foreach (Address address in ViewBag.AddressList)
+        {
+            switch (address.Type)
+            {
+                case 0:
+                    <text>
+        var markerPosition = new google.maps.LatLng('@address.Latitude.ToString()', '@address.Longitude.ToString()');
+        var marker = new google.maps.Marker({
+            map: map,
+            position: markerPosition,
+            icon: ambassadorIcon,
+            title: 'Embajador'
+        });
+
+       @* geocoder.geocode({
+            address: '@address.Street ' + '@address.ExtNum ,' + '@address.ResidencialArea ' + '@address.City , ' + '@address.State'
+        }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map,
+                    icon: ambassadorIcon,
+                    title: 'Embajador'
+                });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        })*@
+        </text>
+                    break;
+                case 1:
+                 <text>
+        var markerPosition = new google.maps.LatLng('@address.Latitude.ToString()', '@address.Longitude.ToString()');
+        var marker = new google.maps.Marker({
+            map: map,
+            position: markerPosition,
+            icon: referredIcon,
+            title: 'Referido'
+        });
+
+       @* geocoder.geocode({
+            address: '@address.Street ' + '@address.ExtNum ,' + '@address.ResidencialArea ' + '@address.City , ' + '@address.State'
+        }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map,
+                    icon: referredIcon,
+                    title: 'Referido'
+                });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        })*@
+        </text>
+                    break;
+                case 2:
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+    window.onload = InitializeMap;
+</script>
+
+
+

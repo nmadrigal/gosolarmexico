@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50725/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50725/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50725/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceApp" />
+      <xsd:import schemaLocation="http://localhost:50725/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_UserAuthentication_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UserAuthentication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReferralsByCustomerEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReferralsByCustomerEmail" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReferralsByCustomerEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReferralsByCustomerEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewReferral_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewReferral" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewReferral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewReferralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CustomerMailExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerMailExists" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CustomerMailExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerMailExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserAddresses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAddresses" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserAddresses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAddresses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAddresses" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllAddresses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRoles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllCutomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCutomers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllCutomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCutomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCustomerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerStatus" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCustomerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChangePasswordByUserEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordByUserEmail" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChangePasswordByUserEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordByUserEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomerById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomerById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAddressByOwnerId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressByOwnerId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAddressByOwnerId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressByOwnerIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="UserAuthentication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UserAuthentication" message="tns:IService1_UserAuthentication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UserAuthenticationResponse" message="tns:IService1_UserAuthentication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReferralsByCustomerEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReferralsByCustomerEmail" message="tns:IService1_GetReferralsByCustomerEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReferralsByCustomerEmailResponse" message="tns:IService1_GetReferralsByCustomerEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewReferral">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewReferral" message="tns:IService1_NewReferral_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewReferralResponse" message="tns:IService1_NewReferral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerMailExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CustomerMailExists" message="tns:IService1_CustomerMailExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CustomerMailExistsResponse" message="tns:IService1_CustomerMailExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAddresses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserAddresses" message="tns:IService1_GetUserAddresses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserAddressesResponse" message="tns:IService1_GetUserAddresses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAddresses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllAddresses" message="tns:IService1_GetAllAddresses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllAddressesResponse" message="tns:IService1_GetAllAddresses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserRoles" message="tns:IService1_GetUserRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserRolesResponse" message="tns:IService1_GetUserRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCutomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllCutomers" message="tns:IService1_GetAllCutomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllCutomersResponse" message="tns:IService1_GetAllCutomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateCustomerStatus" message="tns:IService1_UpdateCustomerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateCustomerStatusResponse" message="tns:IService1_UpdateCustomerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordByUserEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChangePasswordByUserEmail" message="tns:IService1_ChangePasswordByUserEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChangePasswordByUserEmailResponse" message="tns:IService1_ChangePasswordByUserEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCustomerById" message="tns:IService1_GetCustomerById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCustomerByIdResponse" message="tns:IService1_GetCustomerById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressByOwnerId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAddressByOwnerId" message="tns:IService1_GetAddressByOwnerId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAddressByOwnerIdResponse" message="tns:IService1_GetAddressByOwnerId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserAuthentication">
+      <soap:operation soapAction="http://tempuri.org/IService1/UserAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReferralsByCustomerEmail">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReferralsByCustomerEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewReferral">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewReferral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerMailExists">
+      <soap:operation soapAction="http://tempuri.org/IService1/CustomerMailExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAddresses">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUserAddresses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAddresses">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllAddresses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoles">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUserRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCutomers">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllCutomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerStatus">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateCustomerStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordByUserEmail">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChangePasswordByUserEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCustomerById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressByOwnerId">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAddressByOwnerId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:50725/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

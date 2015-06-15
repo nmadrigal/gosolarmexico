@@ -1,0 +1,15 @@
+C:\MyProjects\GoSolarMexico\AndroidApp\bin\Debug\AndroidApp.dll
+C:\MyProjects\GoSolarMexico\AndroidApp\bin\Debug\AndroidApp.pdb
+C:\MyProjects\GoSolarMexico\AndroidApp\bin\Debug\AndroidApp.dll.mdb
+C:\MyProjects\GoSolarMexico\AndroidApp\bin\Debug\AndroidApp.AndroidApp.apk
+C:\MyProjects\GoSolarMexico\AndroidApp\bin\Debug\AndroidApp.AndroidApp-Signed.apk
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\AndroidApp.csprojResolveAssemblyReference.cache
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\AndroidApp.dll
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\AndroidApp.pdb
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\android\bin\AndroidApp.AndroidApp.apk
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\res\layout\main.xml
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\res\values\strings.xml
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\res\drawable\icon.png
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\R.cs.flag
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\uploadflags.txt
+C:\MyProjects\GoSolarMexico\AndroidApp\obj\Debug\res\drawable\fluicon.jpg

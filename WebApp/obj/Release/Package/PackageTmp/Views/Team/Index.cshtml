@@ -1,0 +1,91 @@
+﻿@using WebApp.ServiceReference1;
+
+@{    
+    ViewBag.Title = "Mi Equipo";
+    int total = 0;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="@Url.Action("Index", "Ambassador")">
+                <img src="~/Images/appbar.arrow.left.png" style="width: 60px; height: 60px" /></a>
+        </div>
+        <div class="col-xs-4">
+            <span style="color: white; font-size: medium">Mis Referidos</span>
+        </div>
+        <div class="col-xs-4">
+            <div>
+                <a href="@Url.Action("NewReferral", "Team")">
+                    <img src="~/Images/add_icon.png" style="width: 40px; height: 40px" /></a>
+            </div>
+            <div>
+                <span style="color: white">Agregar</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-xs-5">
+            <span style="color: white; font-size: medium">Referidos: @ViewBag.customerList.Count</span>
+        </div>
+        <div class="col-xs-4">
+            <span style="color: white; font-size: small">Estatus</span>
+        </div>
+        <div class="col-xs-3">
+            <span style="color: white; font-size: small">Ganancia</span>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px">
+        <div class="panel">
+            @foreach (Customer customer in ViewBag.customerList)
+            {                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <span style="font-size: medium"><strong>@customer.Name @customer.LastName</strong></span>
+                        </div>
+                        <div class="col-xs-4">
+                            @switch (customer.Status)
+                            {
+                                case 0:
+                                <span>En proceso</span>
+                                    break;
+                                case 1:
+                                <span>En negocacion</span>
+                                    break;
+                                case 2:
+                                <span style="color: green">Exitoso!</span>
+                                    break;
+                                case 3:
+                                <span>No viable</span>
+                                    break;
+                                default:
+                                    break;
+                            }
+                        </div>
+                        <div class="col-xs-3">
+                            @if (customer.Status == 2)
+                            {
+                                total += 250;
+                                <span style="color: green">$ 250</span>
+                            }
+                            else
+                            {
+                                <span>$ 0</span>
+                            }
+                        </div>
+                    </div>
+                </div>       
+            }
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <div style="text-align: center">
+            <div @*class="panel panel-default"*@>
+                <div @*class="panel-body"*@>
+                    <p style="font-size: xx-large; color: white; text-decoration: underline">Total $ @total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

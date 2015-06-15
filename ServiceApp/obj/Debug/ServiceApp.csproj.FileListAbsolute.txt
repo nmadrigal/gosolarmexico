@@ -1,0 +1,9 @@
+C:\MyProjects\GoSolarMexico\ServiceApp\bin\ServiceApp.dll
+C:\MyProjects\GoSolarMexico\ServiceApp\bin\ServiceApp.pdb
+C:\MyProjects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.csprojResolveAssemblyReference.cache
+C:\MyProjects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.dll
+C:\MyProjects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.pdb
+C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.dll
+C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.pdb
+C:\projects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.dll
+C:\projects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.pdb

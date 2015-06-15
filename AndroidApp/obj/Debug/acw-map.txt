@@ -1,0 +1,2 @@
+AndroidApp.MainActivity;androidapp.MainActivity
+AndroidApp.MainActivity.MyWebViewClient;androidapp.MainActivity_MyWebViewClient

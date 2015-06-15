@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div id="mainDiv" class="container-fluid">
+    <div class="row-fluid" style="margin-top: 25px">
+        <div class="col-xs-12 col-sm-4" style="text-align: center">
+            <a href="@Url.Action("Index", "Team")">
+                <img class="img-menu" src="~/Images/teamicon.png" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-4" style="text-align: center">
+            <a href="@Url.Action("NewReferral", "Team")">
+                <img class="img-menu" src="~/Images/add_referral.png" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-4" style="text-align: center">
+            <a href="@Url.Action("Index", "Map")">
+                <img class="img-menu" src="~/Images/map_icon.png" />
+            </a>
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-xs-12" style="text-align: center; margin-top: 15px">
+                <a href="@Url.Action("Index", "Panel")">
+                    <img class="img-menu" src="~/Images/admin.png" />
+                </a>
+            </div>   
+        }
+    </div>
+</div>

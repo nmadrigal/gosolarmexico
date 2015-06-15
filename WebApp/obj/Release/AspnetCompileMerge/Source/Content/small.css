@@ -1,0 +1,18 @@
+﻿#brand-header {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+#div-header {
+    margin-top: 15px;
+    text-align: left;
+}
+
+#main-menu {
+    font-size: smaller;
+}
+
+.img-menu {
+    width: 70px;
+    height: 70px;
+}

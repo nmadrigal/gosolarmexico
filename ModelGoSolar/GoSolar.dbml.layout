@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GoSolar">
+  <DataContextMoniker Name="/GoSolarDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f4e7fcee-e9c0-488c-adc9-e36fa9f56d65" absoluteBounds="2.75, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GoSolarDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba2ddcf3-b9fd-4b4a-b90f-7c40e8aea3d3" absoluteBounds="2.7649999999999997, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f187573d-585a-48c6-990f-beb185370bcc" absoluteBounds="5.125, 1.625, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/GoSolarDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b54ea04a-ac0f-442e-a925-d4597d9eb753" absoluteBounds="5.14, 2.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67cf59fe-ac64-4205-b157-3a3e03e42828" absoluteBounds="7.75, 1.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/GoSolarDataContext/Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d88f0a19-db3a-4fe7-bf82-b6ace686efbe" absoluteBounds="7.7650000000000006, 2.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

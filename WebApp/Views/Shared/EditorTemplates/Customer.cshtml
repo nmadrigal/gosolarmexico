@@ -1,0 +1,33 @@
+﻿@model WebApp.ServiceReference1.Customer
+
+<div class="row">
+    <div class="col-xs-3">
+        <span style="font-size: medium"><strong>@Model.Name @Model.LastName</strong></span>
+    </div>
+    <div class="col-xs-3">
+        @if ((bool)Model.IsAmbassador)
+        {
+            <span>Embajador</span>
+        }
+        else
+        {
+            <span>Referido</span>
+        }
+    </div>
+    <div class="col-xs-3">
+        @Model.ReferencedByEmail
+    </div>
+    <div class="col-xs-3">
+        @if (!(bool)Model.IsAmbassador)
+        {
+            @Html.DropDownListFor(m => m.Status, new SelectList(
+                                new List<Object> {
+                                new { value = 0, text = "En proceso" }, 
+                                new { value = 1, text = "En negociacion" }, 
+                                new { value = 2, text = "Exitoso" }, 
+                                new { value = 3, text = "No viable" }
+                                },
+                                "value", "text", Model.Status))
+        }
+    </div>
+</div>
