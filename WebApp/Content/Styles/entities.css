@@ -18,7 +18,7 @@ section.main-slider .main-logo img {
 
 section.main-slider .main-logo {
     position: absolute;
-    margin: 250px 40%;
+    margin: 200px 40%;
 }
 
 section.main-slider .main-logo h1 {
@@ -35,22 +35,22 @@ section.box-menu{
     /*width: 100vw;*/
     height: 100%;
     padding: 40px 20px; 
-    background-color: #EEE;
-    cursor: pointer;
+    background-color: #EEE;    
 }
 
 section.box-menu .thumbnail {
     display: inline-block;
     width: 100%;
     padding: 25px;    
+    cursor: pointer;
 }
 
 section.box-menu .thumbnail .caption {
     display: inline-block;
     float: left;
     min-width: 150px;
-    max-width: 60%;
-    height: 250px;
+    max-width: 70%;
+    height: 270px;
     padding: 40px 0px;
     text-align: left;
     color: #7E7E7E;    
@@ -70,7 +70,7 @@ section.box-menu .thumbnail .caption h2 {
 section.box-menu .thumbnail img {
     display: inline-block;
     float: right;
-    width: 30%;
+    width: 25%;
     margin: 40px 0px;
 }
 
@@ -145,11 +145,11 @@ section.box-menu .thumbnail img {
 /***** Class - box-info *****/
 .box-info {
     position: absolute;
-    top: 60px;
-    width: 100%;
+    bottom: 40px;    
     padding: 20px;
-    background-color: #337AB7;
+    background-color: #EEE;
     text-align: center;
+    color: #7E7E7E;
 }
 
 .box-info > p {
