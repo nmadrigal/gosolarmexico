@@ -1,6 +1,6 @@
 ﻿@model WebApp.Models.LoginModel
 @{
-    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+    Layout = "~/Views/Shared/_MobileLoginLayout.cshtml";
 }
 @*<div class="container">
     <div class="row" style="text-align: center; color: white">
@@ -10,38 +10,57 @@
     </div>
 </div>*@
 
-<section class="container" style="text-align: center">
-    <div class="row">
-        @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
-        {
-            @Html.AntiForgeryToken()
-            @Html.ValidationSummary(true)
-            <div style="color: white">
-                @Html.LabelFor(m => m.UserName)
+<section class="login-container">
+    <div class="login-content">
+        <div class="row">
+            <figure class="col-lg-12">
+                <img src="/Images/logo-lg.png" />
+            </figure>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+                    <p class="hidden">
+                        @Html.LabelFor(m => m.UserName)
+                    </p>
+                    <p class="username">
+                        <span class="glyphicon glyphicon-user"></span>
+                        @Html.TextBoxFor(m => m.UserName, new { @placeholder="Usuario / Correo" })
+                    </p>
+                    <p class="hidden">
+                        @Html.ValidationMessageFor(m => m.UserName, "Requerido")
+                    </p>
+                    <p class="hidden">
+                        @Html.LabelFor(m => m.Password)
+                    </p>
+                    <p class="password">
+                        <span class="glyphicon glyphicon-lock"></span>
+                        @Html.PasswordFor(m => m.Password, new { @placeholder="Contraseña" })
+                    </p>
+                    <p class="hidden">
+                        @Html.ValidationMessageFor(m => m.Password, "Requerido")
+                    </p>
+                    <div class="actions">
+                        <ul>
+                            <li>
+                                <a class="link-primary" href="@Url.Action("Register", "Account")">Nuevo Embajador</a>
+                            </li>
+                            <li>
+                                <a class="link-primary" href="#">Olvide mi contraseña</a>
+                            </li>
+                        </ul>            
+                        <p>
+                            <button class="btn btn-lg btn-primary" type="submit">Entrar</button>
+                        </p>    
+                    </div>  
+                }
             </div>
-            <div>
-                @Html.TextBoxFor(m => m.UserName)
-            </div>
-            <div>
-                @Html.ValidationMessageFor(m => m.UserName, "Requerido")
-            </div>
-            <div style="margin-top: 10px; color: white">
-                @Html.LabelFor(m => m.Password)
-            </div>
-            <div>
-                @Html.PasswordFor(m => m.Password)
-            </div>
-            <div>
-                @Html.ValidationMessageFor(m => m.Password, "Requerido")
-            </div>           
-            <div style="margin-top: 20px">
-                <button class="btn btn-lg btn-primary" type="submit" style="width: 200px">Entrar</button>
-            </div>    
-            <div style="margin-top: 10px">
-                <a style="color:white" href="@Url.Action("Register", "Account")">Crea tu cuenta</a>
-            </div>       
-        }
+        </div>
     </div>
+    <div class="sepia-filter"></div>
 </section>
 @*<section class="social" id="socialLoginForm">
     <h2>Use another service to log in.</h2>

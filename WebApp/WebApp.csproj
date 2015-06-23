@@ -239,6 +239,9 @@
     <Content Include="Content\Styles\Framework\mobile-angular-ui-desktop.css" />
     <Content Include="Content\Styles\Framework\mobile-angular-ui-hover.css" />
     <Content Include="Content\Styles\Framework\mobile-angular-ui-migrate.css" />
+    <Content Include="Content\Styles\Mobile\mobile-base.css" />
+    <Content Include="Content\Styles\Mobile\mobile-entities.css" />
+    <Content Include="Content\Styles\Mobile\mobile-overrides.css" />
     <Content Include="Content\Styles\overrides.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -302,6 +305,8 @@
     <Content Include="Images\admin.png" />
     <Content Include="Images\appbar.arrow.left.png" />
     <Content Include="Images\back_icon.png" />
+    <Content Include="Images\bg-login.jpg" />
+    <Content Include="Images\bg-login.png" />
     <Content Include="Images\Blue-ribbon.jpg" />
     <Content Include="Images\blueBackground.jpg" />
     <Content Include="Images\bluewood.jpg" />
@@ -410,6 +415,7 @@
     <Content Include="Content\Styles\Framework\mobile-angular-ui.less" />
     <Content Include="Content\Styles\Framework\sm-grid.less" />
     <Content Include="Content\Styles\Framework\variables.less" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
     <None Include="Properties\PublishProfiles\JhonatanWork.pubxml" />
     <Content Include="Scripts\Framework\angular-route.js" />
     <Content Include="Scripts\Framework\angular-route.min.js" />
@@ -456,6 +462,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\gosolar\WebHome.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -525,6 +532,7 @@
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\Panel\CustomerDetail.cshtml" />
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
+    <Content Include="Views\Shared\_MobileLoginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

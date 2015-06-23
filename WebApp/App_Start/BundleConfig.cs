@@ -16,7 +16,15 @@ namespace WebApp
                 "~/Content/Styles/base.css",
                 "~/Content/Styles/entities.css",
                 "~/Content/Styles/overrides.css"
-                ));
+            ));
+
+            /**** for mobile app *****/
+            bundles.Add(new StyleBundle("~/Content/mobileCss").Include(
+                "~/fonts/fontawesome-webfont.woff",
+                "~/Content/Styles/Mobile/mobile-base.css",
+                "~/Content/Styles/Mobile/mobile-entities.css",
+                "~/Content/Styles/Mobile/mobile-overrides.css"
+            ));
 
             bundles.Add(new StyleBundle("~/Content/Styles/mobileangularcss").Include(
                 "~/Content/Styles/Framework/mobile-angular-ui-base.css",
@@ -73,7 +81,9 @@ namespace WebApp
                 "~/Scripts/Framework/components/sidebars.js",
                 "~/Scripts/Framework/components/switch.js"));
 
-            
+            bundles.Add(new ScriptBundle("~/bundles/gosolar").Include(
+                "~/Scripts/gosolar/WebHome.js"
+            ));
         }
     }
 }

@@ -8,7 +8,7 @@
     @Html.Partial("_html5shiv")    
     @Styles.Render("~/Content/bootstrapcss")    
     @Styles.Render("~/Content/Styles/mobileangularcss")
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/mobileCss")
 
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
@@ -24,9 +24,9 @@
         var app = angular.module('mobileApp', ['ngRoute']);
     </script>
 </head>
-<body ng-app="mobileApp">
+<body>
 
-    <div id="body" class="ng-scope has-navbar-top has-navbar-bottom has-sidebar-left has-sidebar-right">
+    <div id="body" ng-app="mobileApp" class="ng-scope has-navbar-top has-navbar-bottom has-sidebar-left has-sidebar-right">
         <!-- Sidebar -->        
         <div ui-track-as-search-param="true" class="sidebar sidebar-left ng-scope"><div class="scrollable ng-scope" style="padding-top: 70px;">
               <h1 class="scrollable-header app-name">Nestor Madrigal <small>Ns</small></h1>  
@@ -35,15 +35,20 @@
                   <a class="list-group-item active" href="#/">Home <i class="fa fa-chevron-right pull-right"></i></a>
                   <a class="list-group-item" href="#/scroll">Cambiar contraseña <i class="fa fa-chevron-right pull-right"></i></a>
                   <a class="list-group-item" href="#/toggle">Ajustes <i class="fa fa-chevron-right pull-right"></i></a>
-                  <a class="list-group-item" href="#/tabs">Cerrar sesión <i class="fa fa-chevron-right pull-right"></i></a>
-                  <a class="list-group-item" href="#/drag">Drag 1 <span class="label label-danger">Experimental</span> <i class="fa fa-chevron-right pull-right"></i></a>
-                  <a class="list-group-item" href="#/carousel">Drag 2 <span class="label label-danger">Experimental</span> <i class="fa fa-chevron-right pull-right"></i></a>
+                  @*<a class="list-group-item" href="#/tabs">Cerrar sesión <i class="fa fa-chevron-right pull-right"></i></a>*@
+                  @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a class="list-group-item" href="javascript:document.getElementById('logoutForm').submit()"><span>Cerrar sesion</span></a>
+                    }
+                    @*<a class="list-group-item" href="#/drag">Drag 1 <span class="label label-danger">Experimental</span> <i class="fa fa-chevron-right pull-right"></i></a>
+                  <a class="list-group-item" href="#/carousel">Drag 2 <span class="label label-danger">Experimental</span> <i class="fa fa-chevron-right pull-right"></i></a>*@
                 </div>
               </div>
             </div>
         </div>
 
-        <div class="app" ng-swipe-right="Ui.turnOn(&quot;uiSidebarLeft&quot;)" ng-swipe-left="Ui.turnOff(&quot;uiSidebarLeft&quot;)">
+        <div class="app" ng-swipe-right="Ui.turnOn("uiSidebarLeft")" ng-swipe-left="Ui.turnOff("uiSidebarLeft")">
             <!--- Navbar -->
             <div class="navbar navbar-app navbar-absolute-top">
                 <div class="navbar-brand navbar-brand-center">
@@ -67,13 +72,13 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    @*<footer class="footer">
         <div class="container-fluid" style="text-align: center">
             <div class="row" style="color: white; font-size: small">
                 Terms of use  |  Go Solar México 2015            
             </div>
         </div>
-    </footer>    
+    </footer> *@   
     @RenderSection("scripts", required: false)
 </body>
 </html>

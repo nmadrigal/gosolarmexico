@@ -86,8 +86,7 @@ header .container-fluid {
 }
 
 header nav .navbar-nav {
-    float: right; 
-    margin-right: 5px;   
+    float: right;    
 }
 
 header .logo {
@@ -98,7 +97,7 @@ header .logo {
 
 header .logo img {
     width: 60px;
-    margin-right: 15px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -106,7 +105,7 @@ header .logo a {
     padding: 5px;        
     text-transform: uppercase;
     font-family: Impact, 'Segoe UI', sans-serif, Arial;
-    font-size: 28px;
+    font-size: 22px;
     color: #7E7E7E;
 }
 
@@ -165,14 +164,37 @@ section {
 
 #mainNavigation ul li:last-of-type {
     border: 0px none;
+    vertical-align: top;
 }
 
 #mainNavigation ul li a {
-    padding: 10px;
+    padding: 10px 5px;
     color: #7E7E7E;
     font-size: 18px;    
 }
 
 #mainNavigation ul li a:hover {
     color: #222;
+}
+
+#mainNavigation .nav-login a {
+    display: inline-block;
+    float:left;
+}
+
+#mainNavigation .nav-login a:first-child {
+    padding-right: 0px;
+}
+
+/* Maps*/
+
+.map-canvas-office {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
