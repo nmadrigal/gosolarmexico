@@ -124,6 +124,7 @@ section.box-menu .thumbnail img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4241', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+
 .text-wrap {
     margin-bottom: 25px;
 }
@@ -249,8 +250,6 @@ footer .social-links a {
     margin: 0px;
 }
 
-
-
 /************ media queries *************/
 @media screen and (max-width: 767px) {
     header nav .navbar-nav {
@@ -270,7 +269,7 @@ footer .social-links a {
     }
     
     #mainNavigation {
-        margin: 0px;
+        margin
         padding: 0px;
     }
 

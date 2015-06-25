@@ -230,8 +230,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
-    <Content Include="Content\medium.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\medium.css" />
     <Content Include="Content\small.css" />
     <Content Include="Content\Styles\base.css" />
     <Content Include="Content\Styles\entities.css" />
@@ -333,9 +333,6 @@
     <Content Include="Images\user_icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap\wells.less" />
     <Content Include="Content\themes\default\variables.less" />
     <Content Include="Content\bootstrap\utilities.less" />
@@ -416,6 +413,11 @@
     <Content Include="Content\Styles\Framework\sm-grid.less" />
     <Content Include="Content\Styles\Framework\variables.less" />
     <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Properties\PublishProfiles\JhonatanWork.pubxml" />
     <Content Include="Scripts\Framework\angular-route.js" />
     <Content Include="Scripts\Framework\angular-route.min.js" />

@@ -65,7 +65,7 @@ namespace WebApp
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                 "~/Scripts/Framework/angular.js",
                 "~/Scripts/Framework/angular-route.js",
-                "~/Scripts/Framework/mobile-angular*"));
+                "~/Scripts/Framework/mobile-angular-ui.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularcore").Include(
                 "~/Scripts/Framework/components/activeLinks.js",

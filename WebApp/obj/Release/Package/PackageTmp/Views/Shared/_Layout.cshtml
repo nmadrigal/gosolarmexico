@@ -44,7 +44,10 @@
                         @*<li class="logo"><a href="."><img src="/Images/logo.png" alt="Gosolar mexico logo" />Gosolar México</a></li>*@
                         <li><a href="#">Residencial</a></li>
                         <li><a href="#">Industrial & Comercial</a></li>
-                        <li class="last">@Html.ActionLink("Embajador Solar", "Login", "Account", null, new { id = "brand-header" })</li>
+                        <li><a href="#">Gobierno</a></li>
+                        <li class="last nav-login">@Html.ActionLink(" ", "Login", "Account", null, new { id = "brand-header", @class="glyphicon glyphicon-user" })
+                            @Html.ActionLink("Login", "Login", "Account", null, new { id = "login", @target="_blank"}) 
+                        </li>
                         <li>
                             <ul class="social-links">
                                 <li class="facebook-social-link-sm grayscale-filter"><a href="http://www.facebook.com/gosolarmexico" target="_blank"></a></li>
@@ -105,65 +108,83 @@
                 </div>                
             </div>
             <div class="row text-wrap">
-                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-2">
+                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     @*<h3>Oficinas generales</h3>*@
                     <div>
-                        <h4>Torre Pabellón M</h4>
-                        <p>Melchor Ocampo 178 Pte.</p>
+                        <h4>Monterrey - Torre Pabellón M</h4>
+                        <div id="mapCanvas1" class="map-canvas-office"></div>
+                        @*<p>Melchor Ocampo 178 Pte.</p>
                         <p>Col. Centro </p>
                         <p>Monterrey, N.L. C.P. 64000 </p>
                         <p>info@gosolarmexico.com.mx</p>
-                        <p>Tel. 01800-GOSOLAR (4676527)</p>
+                        <p>Tel. 01800-GOSOLAR (4676527)</p>*@
                     </div>
                 </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     @*<h3>Oficina Regional Occidente </h3>*@
                     <div>
-                        <h4>Torre Skalia</h4>
-                        <p>Avenida Empresarios #135 </p>
+                        <h4>Jalisco - Torre Skalia</h4>
+                        <div id="mapCanvas2" class="map-canvas-office"></div>
+                        @*<p>Avenida Empresarios #135 </p>
                         <p>Col. Puerta de Hierro </p>
                         <p>Zapopan, Jalisco. C.P. 45116</p>
                         <p>oro@gosolarmexico.com.mx</p>
-                        <p>Tel. 01800-GOSOLAR (4676527)</p>
+                        <p>Tel. 01800-GOSOLAR (4676527)</p>*@
                     </div>
                 </div>                 
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     @*<h3>Oficina Regional Centro</h3>*@
                     <div>
-                        <h4>Complejo Central Park</h4>
-                        <p>Armando Birlain 2001 Corporativo 1, Piso 15A </p>
+                        <h4>Querétaro - Complejo Central Park</h4>
+                        <div id="mapCanvas3" class="map-canvas-office"></div>
+                        @*<p>Armando Birlain 2001 Corporativo 1, Piso 15A </p>
                         <p>Colonia Centro Sur (Complejo Central Park) </p>
                         <p>Querétaro, Qro. C.P. 76090 </p>
                         <p>orb@gosolarmexico.com.mx</p>
-                        <p>Tel. 01800-GOSOLAR (4676527)</p>
+                        <p>Tel. 01800-GOSOLAR (4676527)</p>*@
                     </div>
                 </div>                  
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     @*<h3>Oficina Regional Sureste</h3>*@
                     <div>
-                        <h4>Malecon Americas</h4>
-                        <p>Bonampak, Sm. 6Mz. 1, Lt. 1 </p>
+                        <h4>Cancún - Malecon Americas</h4>
+                        <div id="mapCanvas4" class="map-canvas-office"></div>
+                        @*<p>Bonampak, Sm. 6Mz. 1, Lt. 1 </p>
                         <p>Cancún, Quintana Roo 77500 </p>
                         <p>ors@gosolarmexico.com.mx</p>
-                        <p>Tel. 01800-GOSOLAR (4676527)</p>
+                        <p>Tel. 01800-GOSOLAR (4676527)</p>*@
                     </div>
                 </div>
                 
             </div>
-            <div class="row">
-                <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">                
+                <nav class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-lg-offset-2">
                     <ul class="nav-horizontal">
-                        <li>¿Quiénes somos?</li>
-                        <li>Aviso de privacidad</li>
-                        <li>Contacto</li>
-                        <li>Ubícanos en el mapa</li>
+                        <li><a href="#">¿Quiénes somos?</a></li>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Ubícanos en el mapa</a></li>                                                
+                        <li>
+                            <label>Síguenos en:</label>        
+                        </li>
                     </ul>
                     
+                    <ul class="social-links">
+                        <li class="facebook-social-link-sm"><a href="http://www.facebook.com/gosolarmexico" target="_blank"></a></li>
+                        <li class="twitter-social-link-sm"><a href="http://www.twitter.com/gosolarmexico" target="_blank"></a></li>
+                        <li class="instagram-social-link-sm"><a href="http://www.instagram.com/gosolarmexico" target="_blank"></a></li>
+                        @*<li class="youtube-social-link-sm grayscale-filter"><a href="http://" target="_blank"></a></li>*@                        
+                    </ul>                    
                 </nav>
             </div>
         </div>
     </footer>
-    @*@Scripts.Render("~/bundles/jquery")*@
     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/gosolar")
 </body>
+<script>
+    $(document).ready(function () {
+        Gosolar.Home.Init();
+    });
+</script>
 </html>

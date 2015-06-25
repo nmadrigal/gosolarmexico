@@ -7,3 +7,8 @@ C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.dll
 C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.pdb
 C:\projects\GoSolarMexico\ServiceApp\obj\Release\ServiceApp.dll
 C:\projects\GoSolarMexico\ServiceApp\obj\Release\ServiceApp.pdb
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\ServiceApp\bin\ServiceApp.dll
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\ServiceApp\bin\ServiceApp.pdb
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\ServiceApp\obj\Release\ServiceApp.csprojResolveAssemblyReference.cache
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\ServiceApp\obj\Release\ServiceApp.dll
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\ServiceApp\obj\Release\ServiceApp.pdb
