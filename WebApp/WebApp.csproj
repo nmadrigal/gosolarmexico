@@ -231,6 +231,8 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\foundation\foundation.min.css" />
+    <Content Include="Content\foundation\normalize.css" />
     <Content Include="Content\medium.css" />
     <Content Include="Content\small.css" />
     <Content Include="Content\Styles\base.css" />
@@ -317,6 +319,7 @@
     <Content Include="Images\icn-energy.png" />
     <Content Include="Images\icn-solarenergy.png" />
     <Content Include="Images\iconsheet-social-links.png" />
+    <Content Include="Images\iconsheet.png" />
     <Content Include="Images\info_icon.jpg" />
     <Content Include="Images\logo-lg-white.png" />
     <Content Include="Images\logo-lg.png" />
@@ -324,6 +327,11 @@
     <Content Include="Images\map_icon.png" />
     <Content Include="Images\moreblue_background.jpg" />
     <Content Include="Images\red_sun_icon.png" />
+    <Content Include="Images\slide1.jpg" />
+    <Content Include="Images\slide2.jpg" />
+    <Content Include="Images\slide3.jpg" />
+    <Content Include="Images\slide4.jpg" />
+    <Content Include="Images\slide5.jpg" />
     <Content Include="Images\slogan-lg-white.png" />
     <Content Include="Images\solar1.jpg" />
     <Content Include="Images\solar2.jpg" />
@@ -433,9 +441,17 @@
     <Content Include="Scripts\Framework\core\fastclick.js" />
     <Content Include="Scripts\Framework\core\outerClick.js" />
     <Content Include="Scripts\Framework\core\sharedState.js" />
+    <Content Include="Scripts\Framework\foundation\foundation.js" />
+    <Content Include="Scripts\Framework\foundation\foundation.min.js" />
+    <Content Include="Scripts\Framework\foundation\foundation.offcanvas.js" />
+    <Content Include="Scripts\Framework\foundation\foundation.orbit.js" />
+    <Content Include="Scripts\Framework\foundation\foundation.slider.js" />
     <Content Include="Scripts\Framework\mobile-angular-ui.components.js" />
     <Content Include="Scripts\Framework\mobile-angular-ui.core.js" />
     <Content Include="Scripts\Framework\mobile-angular-ui.js" />
+    <Content Include="Scripts\Framework\mobile-angular-ui.min.js" />
+    <Content Include="Scripts\gosolar\Mobile\demo.js" />
+    <Content Include="Scripts\gosolar\Mobile\MobileApp.js" />
     <Content Include="Scripts\html5shiv.js" />
     <None Include="Properties\PublishProfiles\nmadrigalUI.pubxml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />

@@ -12,6 +12,10 @@ namespace WebApp
                "~/Content/bootstrap/bootstrap.css",
                "~/Content/bootstrap/bootstrap.min.css"));
 
+            bundles.Add(new StyleBundle("~/Content/foundationcss").Include(
+               "~/Content/foundation/normalize.css",
+               "~/Content/foundation/foundation.min.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/Styles/base.css",
                 "~/Content/Styles/entities.css",
@@ -62,10 +66,15 @@ namespace WebApp
            
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/foundationscript").Include(
+                "~/Scripts/Framework/foundation/foundation.js",
+                "~/Scripts/Framework/foundation/foundation.offcanvas.js",
+                "~/Scripts/Framework/foundation/foundation.orbit.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                "~/Scripts/Framework/angular.js",
+                "~/Scripts/Framework/angular.min.js",
                 "~/Scripts/Framework/angular-route.js",
-                "~/Scripts/Framework/mobile-angular-ui.js"));
+                "~/Scripts/Framework/mobile-angular-ui.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularcore").Include(
                 "~/Scripts/Framework/components/activeLinks.js",
@@ -83,6 +92,10 @@ namespace WebApp
 
             bundles.Add(new ScriptBundle("~/bundles/gosolar").Include(
                 "~/Scripts/gosolar/WebHome.js"
+            ));
+
+            bundles.Add(new ScriptBundle("~/bundles/gosolarMobile").Include(         
+                "~/Scripts/gosolar/Mobile/MobileApp.js"
             ));
         }
     }

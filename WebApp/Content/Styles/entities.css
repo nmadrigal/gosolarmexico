@@ -144,8 +144,8 @@ section.box-menu .thumbnail img {
 
 /***** Class - box-info *****/
 .box-info {
-    position: absolute;
-    bottom: 40px;    
+    position: relative;
+    margin-top: -129px;    
     padding: 20px;
     background-color: #EEE;
     text-align: center;

@@ -250,6 +250,5 @@ C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\ko\System.Spatial.reso
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\ru\System.Spatial.resources.dll
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.csprojResolveAssemblyReference.cache
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.dll
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.pdb
