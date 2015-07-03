@@ -22,7 +22,6 @@ section.main-slider .main-logo {
 }
 
 section.main-slider .main-logo h1 {
-    
     font-family: Broadway;
     font-size: 50px;
     font-weight: 700;
@@ -124,7 +123,6 @@ section.box-menu .thumbnail img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4241', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-
 .text-wrap {
     margin-bottom: 25px;
 }
@@ -188,7 +186,6 @@ nav .nav-horizontal li {
     display: block;
     margin: 5px 2px;
     background-image: url("/Images/iconsheet-social-links.png");
-
 }
 
 .social-links .facebook-social-link a {    
@@ -269,14 +266,13 @@ footer .social-links a {
     }
     
     #mainNavigation {
-        margin
         padding: 0px;
     }
 
     #mainNavigation > ul > li {
         display: block;
         border: 0px none;
-        border-top: 1px solid #CCC
+        border-top: 1px solid #CCC;
     }
 
     #mainNavigation > ul li.last {

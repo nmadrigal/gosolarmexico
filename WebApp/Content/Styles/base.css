@@ -31,8 +31,12 @@ footer, header, hgroup, menu, nav, section {
     position: relative;    
 }
 body {
+    height: 100vh;
 	line-height: 1;
     font-family: 'Segoe UI', Arial, helvetica;
+    background-color: #EEE;
+    color: #535353;
+    overflow: auto;
 }
 ol, ul,
 ol li, ul li {
@@ -54,13 +58,11 @@ table {
 
 /* Custom styles */
 html {
-   
+   overflow: hidden;
 }
 
-body {
-    background-color: #EEE;
-    color: #535353;
-     
+#body {
+    
 }
 
 nav.navbar {
@@ -87,6 +89,8 @@ header .container-fluid {
 
 header nav .navbar-nav {
     float: right;    
+    margin: 7.5px 15px;
+    z-index: 100;
 }
 
 header .logo {

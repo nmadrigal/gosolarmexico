@@ -1,34 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Go Solar Mexico</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    @Html.Partial("_html5shiv")    
+    @*@Html.Partial("_html5shiv")*@    
     @Styles.Render("~/Content/bootstrapcss")    
-    @Styles.Render("~/Content/Styles/mobileangularcss")
     @Styles.Render("~/Content/css")
-
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/angularcore")
-    @Scripts.Render("~/bundles/angularcomponents")
-    
     <script src="~/Scripts/less-1.5.1.js"></script>
-    @*<link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />*@
-    @*<link rel="stylesheet" media="screen and (min-width: 0px)" href="~/Content/small.css" />
-    <link rel="stylesheet" media="screen and (min-width: 350px)" href="~/Content/medium.css" />*@
-    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        var app = angular.module('myapp', ['ngRoute']);
-    </script>
 </head>
-<body ng-app="myApp">
+<body>
     <header>
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container-fluid">

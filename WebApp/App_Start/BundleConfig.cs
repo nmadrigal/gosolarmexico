@@ -24,7 +24,7 @@ namespace WebApp
 
             /**** for mobile app *****/
             bundles.Add(new StyleBundle("~/Content/mobileCss").Include(
-                "~/fonts/fontawesome-webfont.woff",
+                //"~/fonts/fontawesome-webfont.woff",
                 "~/Content/Styles/Mobile/mobile-base.css",
                 "~/Content/Styles/Mobile/mobile-entities.css",
                 "~/Content/Styles/Mobile/mobile-overrides.css"

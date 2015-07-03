@@ -252,3 +252,4 @@ C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\zh-Hans\System.Spatial
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.dll
 C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.pdb
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\WebApp\obj\Release\WebApp.csprojResolveAssemblyReference.cache
