@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <title>Go Solar Mexico - Mobile</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    @Html.Partial("_html5shiv")    
+    @Styles.Render("~/Content/foundationcss")
+    @Styles.Render("~/Content/mobileCss")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/foundationscript")
+    
+    <script src="~/Scripts/less-1.5.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+   
+</head>
+<body>
+ <div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar bg-primary">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">User Name</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+        <header class="bg-secondary">
+            <h1>User Name</h1>
+            <h3>username@gosolarmexico.com.mx</h3>
+        </header>
+        <ul class="off-canvas-list">
+        
+            <li><a href="#"><span class="icn-sm icn-lock" ></span>Cambiar contraseña</a></li>
+            <li><a href="#"><span class="icn-sm icn-settings"></span>Ajustes</a></li>
+            <li>
+                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a class="list-group-item" href="javascript:document.getElementById('logoutForm').submit()"><span class="icn-sm icn-logout"></span><span>Cerrar sesion</span></a>
+                    }
+      
+        </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Users</label></li>
+        <li><a href="#">Hari Seldon</a></li>
+        <li><a href="#">...</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
+        
+        @RenderBody()
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+
+
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/gosolarMobile")
+</body>
+    <script>
+        
+        $(document).foundation({});
+        GosolarApp.Home.Init();
+    </script>
+
+</html>

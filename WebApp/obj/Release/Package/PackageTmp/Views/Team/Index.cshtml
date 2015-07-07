@@ -1,0 +1,92 @@
+﻿@using WebApp.ServiceReference1;
+
+@{    
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+    ViewBag.Title = "Mi Equipo";
+    int total = 0;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="large-4">
+            <a href="@Url.Action("Index", "Ambassador")">
+                <img src="~/Images/appbar.arrow.left.png" /></a>
+        </div>
+        <div class="large-4">
+            <span>Mis Referidos</span>
+        </div>
+        <div class="large-4">
+            <div>
+                <a href="@Url.Action("NewReferral", "Team")">
+                    <img src="~/Images/add_icon.png" /></a>
+            </div>
+            <div>
+                <span>Agregar</span>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="large-12">
+            <span>Referidos: @ViewBag.customerList.Count</span>
+        </div>
+        <div class="large-12">
+            <span>Estatus</span>
+        </div>
+        <div class="large-12">
+            <span>Ganancia</span>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="panel">
+            @foreach (Customer customer in ViewBag.customerList)
+            {                
+                <div class="container">
+                    <div class="row">
+                        <div class="large-12">
+                            <span ><strong>@customer.Name @customer.LastName</strong></span>
+                        </div>
+                        <div class="large-12">
+                            @switch (customer.Status)
+                            {
+                                case 0:
+                                <span>En proceso</span>
+                                    break;
+                                case 1:
+                                <span>En negocacion</span>
+                                    break;
+                                case 2:
+                                <span style="color: green">Exitoso!</span>
+                                    break;
+                                case 3:
+                                <span>No viable</span>
+                                    break;
+                                default:
+                                    break;
+                            }
+                        </div>
+                        <div class="large-12">
+                            @if (customer.Status == 2)
+                            {
+                                total += 250;
+                                <span style="color: green">$ 250</span>
+                            }
+                            else
+                            {
+                                <span>$ 0</span>
+                            }
+                        </div>
+                    </div>
+                </div>       
+            }
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div style="text-align: center">
+            <div>
+                <div>
+                    <p>Total $ @total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

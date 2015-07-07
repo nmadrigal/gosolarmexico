@@ -194,3 +194,9 @@ header .container-fluid {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+
+/***** Class - container *****/
+.container {
+    margin: 25px 0px;
+}

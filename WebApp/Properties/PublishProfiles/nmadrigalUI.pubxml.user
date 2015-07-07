@@ -191,7 +191,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:41</publishTime>
     </File>
     <File Include="bin/WebApp.dll">
-      <publishTime>06/24/2015 22:12:14</publishTime>
+      <publishTime>07/01/2015 22:41:32</publishTime>
     </File>
     <File Include="bin/WebApp.pdb">
       <publishTime>06/12/2015 23:47:05</publishTime>
@@ -466,6 +466,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/fonts/glyphicons-halflings-regular.woff">
       <publishTime>06/22/2015 21:39:56</publishTime>
     </File>
+    <File Include="Content/foundation/foundation.min.css">
+      <publishTime>06/28/2015 14:36:44</publishTime>
+    </File>
+    <File Include="Content/foundation/normalize.css">
+      <publishTime>06/28/2015 14:36:44</publishTime>
+    </File>
     <File Include="Content/medium.css">
       <publishTime>06/21/2015 13:09:24</publishTime>
     </File>
@@ -476,10 +482,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:24</publishTime>
     </File>
     <File Include="Content/Styles/base.css">
-      <publishTime>06/21/2015 21:38:03</publishTime>
+      <publishTime>07/02/2015 19:07:59</publishTime>
     </File>
     <File Include="Content/Styles/entities.css">
-      <publishTime>06/23/2015 22:27:24</publishTime>
+      <publishTime>07/01/2015 22:41:17</publishTime>
     </File>
     <File Include="Content/Styles/fonts/fontawesome-webfont.woff">
       <publishTime>06/22/2015 21:38:06</publishTime>
@@ -512,13 +518,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2015 22:13:33</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-entities.css">
-      <publishTime>06/23/2015 22:36:45</publishTime>
+      <publishTime>06/30/2015 22:12:07</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-overrides.css">
       <publishTime>06/22/2015 12:35:16</publishTime>
     </File>
     <File Include="Content/Styles/overrides.css">
-      <publishTime>06/21/2015 13:09:24</publishTime>
+      <publishTime>07/02/2015 19:11:48</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
       <publishTime>06/21/2015 13:09:24</publishTime>
@@ -769,6 +775,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/iconsheet-social-links.png">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
+    <File Include="Images/iconsheet.png">
+      <publishTime>06/29/2015 19:53:12</publishTime>
+    </File>
     <File Include="Images/info_icon.jpg">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
@@ -819,6 +828,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/red_sun_icon.png">
       <publishTime>06/21/2015 13:09:25</publishTime>
+    </File>
+    <File Include="Images/slide1.jpg">
+      <publishTime>06/23/2015 20:53:53</publishTime>
+    </File>
+    <File Include="Images/slide2.jpg">
+      <publishTime>06/29/2015 21:02:52</publishTime>
+    </File>
+    <File Include="Images/slide3.jpg">
+      <publishTime>06/20/2015 20:52:41</publishTime>
+    </File>
+    <File Include="Images/slide4.jpg">
+      <publishTime>06/20/2015 20:52:45</publishTime>
+    </File>
+    <File Include="Images/slide5.jpg">
+      <publishTime>06/20/2015 21:22:19</publishTime>
     </File>
     <File Include="Images/slogan-lg-white.png">
       <publishTime>06/21/2015 13:09:25</publishTime>
@@ -892,6 +916,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/Framework/core/sharedState.js">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
+    <File Include="Scripts/Framework/foundation/foundation.js">
+      <publishTime>06/28/2015 14:48:54</publishTime>
+    </File>
+    <File Include="Scripts/Framework/foundation/foundation.min.js">
+      <publishTime>06/28/2015 14:39:46</publishTime>
+    </File>
+    <File Include="Scripts/Framework/foundation/foundation.offcanvas.js">
+      <publishTime>06/28/2015 14:38:56</publishTime>
+    </File>
+    <File Include="Scripts/Framework/foundation/foundation.orbit.js">
+      <publishTime>06/30/2015 21:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Framework/foundation/foundation.slider.js">
+      <publishTime>06/28/2015 15:03:15</publishTime>
+    </File>
     <File Include="Scripts/Framework/mobile-angular-ui.components.js">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
@@ -899,7 +938,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
     <File Include="Scripts/Framework/mobile-angular-ui.js">
-      <publishTime>06/21/2015 13:09:25</publishTime>
+      <publishTime>06/27/2015 21:31:44</publishTime>
+    </File>
+    <File Include="Scripts/Framework/mobile-angular-ui.min.js">
+      <publishTime>06/27/2015 08:40:34</publishTime>
+    </File>
+    <File Include="Scripts/gosolar/Mobile/demo.js">
+      <publishTime>06/27/2015 20:43:14</publishTime>
+    </File>
+    <File Include="Scripts/gosolar/Mobile/MobileApp.js">
+      <publishTime>06/28/2015 17:16:53</publishTime>
     </File>
     <File Include="Scripts/gosolar/WebHome.js">
       <publishTime>06/23/2015 21:41:27</publishTime>
@@ -977,7 +1025,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>06/22/2015 21:02:30</publishTime>
+      <publishTime>07/01/2015 22:06:11</publishTime>
     </File>
     <File Include="Views/Account/Manage.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -998,7 +1046,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Ambassador/Index.cshtml">
-      <publishTime>06/23/2015 22:32:40</publishTime>
+      <publishTime>06/30/2015 22:09:36</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1007,10 +1055,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>06/21/2015 13:09:26</publishTime>
+      <publishTime>06/30/2015 22:32:50</publishTime>
     </File>
     <File Include="Views/Map/Index.cshtml">
-      <publishTime>06/22/2015 21:26:41</publishTime>
+      <publishTime>06/30/2015 22:11:12</publishTime>
     </File>
     <File Include="Views/Panel/CustomerDetail.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1031,19 +1079,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>06/24/2015 22:13:07</publishTime>
+      <publishTime>07/01/2015 22:33:47</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLayout.cshtml">
-      <publishTime>06/23/2015 22:12:44</publishTime>
+      <publishTime>07/01/2015 22:05:15</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLoginLayout.cshtml">
-      <publishTime>06/22/2015 18:09:07</publishTime>
+      <publishTime>07/01/2015 22:05:46</publishTime>
     </File>
     <File Include="Views/Team/Index.cshtml">
-      <publishTime>06/22/2015 21:25:32</publishTime>
+      <publishTime>06/30/2015 22:20:44</publishTime>
     </File>
     <File Include="Views/Team/NewReferral.cshtml">
       <publishTime>06/22/2015 21:26:32</publishTime>
@@ -1055,7 +1103,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/24/2015 22:14:24</publishTime>
+      <publishTime>07/02/2015 19:17:25</publishTime>
     </File>
   </ItemGroup>
 </Project>
