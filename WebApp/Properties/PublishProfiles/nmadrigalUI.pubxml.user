@@ -10,6 +10,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
   <ItemGroup>
+    <File Include="apple-touch-icon-120x120.png">
+      <publishTime>07/02/2015 20:31:30</publishTime>
+    </File>
+    <File Include="apple-touch-icon-144x144.png">
+      <publishTime>07/02/2015 20:31:30</publishTime>
+    </File>
+    <File Include="apple-touch-icon-152x152.png">
+      <publishTime>07/02/2015 20:31:30</publishTime>
+    </File>
+    <File Include="apple-touch-icon-180x180.png">
+      <publishTime>07/02/2015 20:31:30</publishTime>
+    </File>
+    <File Include="apple-touch-icon-precomposed.png">
+      <publishTime>07/02/2015 20:31:30</publishTime>
+    </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>06/21/2015 13:09:38</publishTime>
     </File>
@@ -191,7 +206,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:41</publishTime>
     </File>
     <File Include="bin/WebApp.dll">
-      <publishTime>07/01/2015 22:41:32</publishTime>
+      <publishTime>07/06/2015 22:08:44</publishTime>
     </File>
     <File Include="bin/WebApp.pdb">
       <publishTime>06/12/2015 23:47:05</publishTime>
@@ -222,6 +237,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/zh-Hant/System.Spatial.resources.dll">
       <publishTime>06/21/2015 13:09:43</publishTime>
+    </File>
+    <File Include="browserconfig.xml">
+      <publishTime>07/02/2015 20:31:30</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>06/21/2015 13:09:24</publishTime>
@@ -482,7 +500,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:24</publishTime>
     </File>
     <File Include="Content/Styles/base.css">
-      <publishTime>07/02/2015 19:07:59</publishTime>
+      <publishTime>07/06/2015 21:57:59</publishTime>
     </File>
     <File Include="Content/Styles/entities.css">
       <publishTime>07/01/2015 22:41:17</publishTime>
@@ -515,10 +533,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:24</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-base.css">
-      <publishTime>06/23/2015 22:13:33</publishTime>
+      <publishTime>07/05/2015 19:08:08</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-entities.css">
-      <publishTime>06/30/2015 22:12:07</publishTime>
+      <publishTime>07/05/2015 19:27:28</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-overrides.css">
       <publishTime>06/22/2015 12:35:16</publishTime>
@@ -694,7 +712,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/themes/default/variables.less">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
+    <File Include="favicon-16x16.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="favicon-32x32.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="favicon-96x96.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
     <File Include="favicon.ico">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="favicon1.ico">
       <publishTime>06/21/2015 13:09:28</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff">
@@ -865,6 +895,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/user_icon.png">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
+    <File Include="manifest.json">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="mstile-144x144.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="mstile-150x150.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="mstile-310x150.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="mstile-310x310.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
+    <File Include="mstile-70x70.png">
+      <publishTime>07/02/2015 20:31:35</publishTime>
+    </File>
     <File Include="packages.config">
       <publishTime>06/21/2015 13:09:38</publishTime>
     </File>
@@ -947,7 +995,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2015 20:43:14</publishTime>
     </File>
     <File Include="Scripts/gosolar/Mobile/MobileApp.js">
-      <publishTime>06/28/2015 17:16:53</publishTime>
+      <publishTime>07/05/2015 19:29:38</publishTime>
     </File>
     <File Include="Scripts/gosolar/WebHome.js">
       <publishTime>06/23/2015 21:41:27</publishTime>
@@ -1079,22 +1127,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/01/2015 22:33:47</publishTime>
+      <publishTime>07/06/2015 21:59:58</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLayout.cshtml">
-      <publishTime>07/01/2015 22:05:15</publishTime>
+      <publishTime>07/05/2015 18:37:45</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLoginLayout.cshtml">
-      <publishTime>07/01/2015 22:05:46</publishTime>
+      <publishTime>07/02/2015 20:19:02</publishTime>
     </File>
     <File Include="Views/Team/Index.cshtml">
       <publishTime>06/30/2015 22:20:44</publishTime>
     </File>
     <File Include="Views/Team/NewReferral.cshtml">
-      <publishTime>06/22/2015 21:26:32</publishTime>
+      <publishTime>07/05/2015 19:22:12</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1103,7 +1151,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/02/2015 19:17:25</publishTime>
+      <publishTime>07/06/2015 22:08:54</publishTime>
     </File>
   </ItemGroup>
 </Project>

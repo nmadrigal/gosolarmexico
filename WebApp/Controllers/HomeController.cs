@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using WebApp.Models;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 
@@ -39,7 +41,41 @@ namespace WebApp.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return PartialView("~/Partials/_Contact");
         }
+    
+
+        [HttpPost]
+        public string ContactForm(ContactModel contact)
+        {
+            //if (ModelState.IsValid)
+            //{
+                try
+                {
+                    MailMessage mail = new MailMessage();
+                    mail.To.Add("nestor_madrigal@live.com");
+                    mail.From = new MailAddress(contact.Email);
+                    mail.Subject = "Mensaje de parte de: " + contact.Name + " del estado de: " + contact.State.Text;
+                    mail.Body = contact.Message;
+                    mail.IsBodyHtml = true;
+
+                    SmtpClient smtp = new SmtpClient("relay-hosting.secureserver.net");
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential("admin@gosolarmexico.com.mx", "G@Solar2015mail");
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.EnableSsl = false;
+
+                    smtp.Send(mail);
+                }
+                catch (Exception ex)
+                {
+                    return ex.Message;
+                }
+            //}
+
+            return "OK";
+        }
+
+
     }
 }
