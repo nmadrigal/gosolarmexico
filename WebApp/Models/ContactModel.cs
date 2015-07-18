@@ -9,11 +9,11 @@ namespace WebApp.Models
     public class ContactModel
     {
         [Required]
-        //[Display(Name = "Nombre")]
+        [Display(Name = "Nombre")]        
         public string Name { get; set; }
 
         [Required]
-        //[Display(Name = "Email")]
+        [Display(Name = "Correo")]        
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string Email { get; set; }

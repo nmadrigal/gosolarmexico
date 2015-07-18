@@ -22,13 +22,15 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#614e4e">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    @*@Html.Partial("_html5shiv")*@    
+    @Html.Partial("_html5shiv")    
     @Styles.Render("~/Content/bootstrapcss")    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
+    @*@Scripts.Render("~/bundles/jqueryval")*@
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
     <script src="~/Scripts/less-1.5.1.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
@@ -188,8 +190,13 @@
             </div>
         </div>
     </footer>
-    @RenderSection("scripts", required: false)
+    <div class="loading-container">
+        <div class="backdrop"></div>
+        <div class="loading-content-lg"></div>
+    </div>
+    @RenderSection("Scripts", required: false)
     @Scripts.Render("~/bundles/gosolar")
+   
 </body>
 <script>
     $(document).ready(function () {

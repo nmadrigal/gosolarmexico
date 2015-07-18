@@ -42,8 +42,8 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult AddReferral(CustomerModel model)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 service = new Service1Client();
 
                 if (!service.CustomerMailExists(Request["email"]))
@@ -114,7 +114,7 @@ namespace WebApp.Controllers
                 }
 
                 ModelState.AddModelError("", "E-mail ya existe, introduzca otro.");
-            }
+            //}
             return View("NewReferral", model);
         }
 

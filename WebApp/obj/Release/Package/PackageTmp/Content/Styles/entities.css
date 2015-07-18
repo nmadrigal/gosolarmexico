@@ -4,7 +4,9 @@
 
 
 /* Section - main-slider */
-section.main-slider {
+#body section.main-slider {
+    height: 100vh;
+    padding: 0px;
     background: url("/Images/solarHome.jpg") no-repeat center top fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -32,8 +34,7 @@ section.main-slider .main-logo h1 {
 section.box-menu{
     position: relative;    
     /*width: 100vw;*/
-    height: 100%;
-    padding: 40px 20px; 
+    height: 100%; 
     background-color: #EEE;    
 }
 
@@ -71,6 +72,25 @@ section.box-menu .thumbnail img {
     float: right;
     width: 25%;
     margin: 40px 0px;
+}
+
+/***** Class - contact *****/
+section.contact h1 {
+    margin: 15px 0px;
+}
+
+section.contact form p {
+    margin-bottom: 15px;
+}
+
+section.contact form p label {
+    margin-bottom: 10px;
+}
+
+section.contact form p textarea {
+    max-width: 100%;
+    height: 100px;
+    max-height: 150px;
 }
 
 /* Filter - sepia */

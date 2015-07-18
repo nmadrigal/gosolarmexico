@@ -48,15 +48,15 @@ namespace WebApp.Controllers
         [HttpPost]
         public string ContactForm(ContactModel contact)
         {
-            //if (ModelState.IsValid)
-            //{
+            if (ModelState.IsValid)
+            {
                 try
                 {
                     MailMessage mail = new MailMessage();
                     mail.To.Add("nestor_madrigal@live.com");
-                    mail.From = new MailAddress(contact.Email);
+                    mail.From = new MailAddress(Request["Email"]);
                     mail.Subject = "Mensaje de parte de: " + contact.Name + " del estado de: " + contact.State.Text;
-                    mail.Body = contact.Message;
+                    mail.Body = Request["Message"];
                     mail.IsBodyHtml = true;
 
                     SmtpClient smtp = new SmtpClient("relay-hosting.secureserver.net");
@@ -66,14 +66,15 @@ namespace WebApp.Controllers
                     smtp.EnableSsl = false;
 
                     smtp.Send(mail);
+                    return "OK";
                 }
                 catch (Exception ex)
                 {
-                    return ex.Message;
+                    return "error";
                 }
-            //}
+            }
 
-            return "OK";
+            return "error";
         }
 
 

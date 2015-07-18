@@ -6,6 +6,7 @@ Gosolar.Home = {};
 
     g.Init = function () {
         g.InitMaps();
+        g.populateStatesList();
     };
 
     g.InitMaps = function () {
@@ -87,5 +88,52 @@ Gosolar.Home = {};
         marker.setMap(markOptions.map);
     };
 
+    g.populateStatesList = function () {
+        var states = g.GetStates();
+        console.log(states);
+        var comboStates = "";
+        $.each(states, function (i, val) {
+            comboStates += '<option value="' + val.text + '">' + val.text + '</option>';
+        });
+        $(".state").append(comboStates);
+    };
+
+    g.GetStates = function () {
+        var states = [
+            { id: 1, text: 'Aguascalientes'},
+            { id: 2, text: 'Baja California'},
+            { id: 3, text: 'Baja California Sur'},
+            { id: 4, text: 'Campeche'},
+            { id: 5, text: 'Chiapas'},
+            { id: 6, text: 'Chihuahua'},
+            { id: 7, text: 'Coahuila'},
+            { id: 8, text: 'Colima'},
+            { id: 9, text: 'Distrito Federal'},
+            { id: 10, text: 'Durango'},
+            { id: 11, text: 'Estado de México'},
+            { id: 12, text: 'Guanajuato'},
+            { id: 13, text: 'Guerrero'},
+            { id: 14, text: 'Hidalgo'},
+            { id: 15, text: 'Jalisco'},
+            { id: 16, text: 'Michoacán'},
+            { id: 17, text: 'Morelos'},
+            { id: 18, text: 'Nayarit'},
+            { id: 19, text: 'Nuevo León'},
+            { id: 20, text: 'Oaxaca'},
+            { id: 21, text: 'Puebla'},
+            { id: 22, text: 'Querétaro'},
+            { id: 23, text: 'Quintana Roo'},
+            { id: 24, text: 'San Luis Potosí'},
+            { id: 25, text: 'Sinaloa'},
+            { id: 26, text: 'Sonora'},
+            { id: 27, text: 'Tabasco'},
+            { id: 28, text: 'Tamaulipas'},
+            { id: 29, text: 'Tlaxcala'},
+            { id: 30, text: 'Veracruz'},
+            { id: 31, text: 'Yucatán'},
+            { id: 32, text: 'Zacatecas'}];
+
+        return states;
+    };
 
 })(window.Gosolar.Home = window.Gosolar.Home || {}, jQuery);

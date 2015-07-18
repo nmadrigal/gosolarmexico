@@ -7,6 +7,11 @@ Gosolar.Home = {};
     g.Init = function () {
         g.InitMaps();
         g.populateStatesList();
+        //$(".contact .btn-submit").bind("click", function(e) {
+            //e.preventDefault();
+            g.ValidateRules($(this));
+        //});
+
     };
 
     g.InitMaps = function () {
@@ -90,12 +95,41 @@ Gosolar.Home = {};
 
     g.populateStatesList = function () {
         var states = g.GetStates();
-        console.log(states);
         var comboStates = "";
         $.each(states, function (i, val) {
             comboStates += '<option value="' + val.text + '">' + val.text + '</option>';
         });
         $(".state").append(comboStates);
+    };
+
+    g.ValidateRules = function (el) {
+        
+        $("#contactForm").validate({
+            rules: {
+                Name: "required",
+                Email: {
+                    required: true,
+                    email: true
+                },
+                Phone: "required",
+                State: "required",
+                Message: "required"
+            },
+            messages: {
+                Name: "Por favor escriba su nombre",
+                Email: {
+                    required: "Es necesaria su direccion de correo",
+                    email: "Por favor escriba un correo valido: [alguien@dominio.com]"
+                },
+                Phone: "Escriba un numero de telefono",
+                State: "Seleccione un estado",
+                Message: "Por favor escriba sus comentarios"
+            },
+            submitHandler: function(el) {
+                //form.submit();
+                g.SubmitContact(el);
+        }
+        });
     };
 
     g.GetStates = function () {
@@ -134,6 +168,74 @@ Gosolar.Home = {};
             { id: 32, text: 'Zacatecas'}];
 
         return states;
+    };
+
+    g.SubmitContact = function (el) {
+        //g.ValidateRules();
+        g.ShowLoading();
+        var form = $("#contactForm");//el;//$(el).parents('form');
+        console.log(form.serialize());
+        $.ajax({
+            type: "POST",
+            url: "/Home/ContactForm",//form.attr('action'),
+            data: form.serialize(),
+            success: function (response) {
+                var el = $(".contact");
+                if (response == "OK")
+                    g.ShowMessage("ok","Su mensaje ha sido enviado, Gracias por sus comentarios!", el);
+                else
+                    g.ShowMessage("error", "Su mensaje NO ha sido enviado, por favor intentelo de nuevo mas tarde!", el);
+                g.ResetElements($("#contactForm"));
+                g.HideLoading();
+            },
+            error: function (xhr, status, error) {
+                g.ShowMessage("error", "Su mensaje NO ha sido enviado, por favor intentelo de nuevo mas tarde!", el);
+            }
+        });
+    };
+
+    //parameters: 
+    //  type: ok, error
+    //  msg: text message to display
+    //  el: target element to display
+    g.ShowMessage = function (type, msg, el) {
+
+        var markup = $("<div class='message-container'>").prependTo(el);
+        markup.append("<div class='backdrop'>");
+        if (type == "ok")
+            markup.append('<div class="message-content"><h1>' + msg + '</h1></div>');
+        if (type == "error")
+            markup.append('<div class="message-content error"><h1>' + msg + '</h1></div>');
+        el.append(markup);
+        setTimeout(function () {
+            el.find(".message-container").remove();
+        }, 3000);
+    };
+
+    g.ShowLoading = function (el) {
+        $(".loading-container").show();
+    };
+
+    g.HideLoading= function () {
+        $(".loading-container").hide();
+    };
+
+    //parameters:
+    //view/container of elements to reset
+    g.ResetElements = function (el) {
+        var inputs = el.find("input");
+        var selects = el.find("select");
+        var textarea = el.find("textarea");
+        $.each(inputs, function (i, val) {
+            val.value = "";
+        });
+        $.each(selects, function (s, val) {
+            el.find("option:first-child").attr("selected", "selected")
+        });
+        $.each(textarea, function (t, val) {
+            val.value = "";
+        });
+
     };
 
 })(window.Gosolar.Home = window.Gosolar.Home || {}, jQuery);
