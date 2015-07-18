@@ -4,14 +4,20 @@
         @using (Html.BeginForm("ContactForm", "Home", FormMethod.Post, new { @id = "contactForm", novalidate = "novalidate" }))
         {
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <p>
                         @*<label>Nombre</label>*@
                         @*@Html.LabelFor(m => m.Name)*@                        
-                        @Html.TextBoxFor(m => m.Name, "Requerido", new { @class = "form-control validation-on", @placeholder = "Nombre y apellidos", @required = "required" })
+                        @Html.TextBoxFor(m => m.Name, "Requerido", new { @class = "form-control validation-on", @placeholder = "Nombre", @required = "required" })
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <p>                        
+                        @*@Html.LabelFor(m => m.LastName)*@                        
+                        @Html.TextBoxFor(m => m.LastName, "Requerido", new { @class = "form-control validation-on", @placeholder = "Apellido paterno", @required = "required" })
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <p>
                         @*<label>Correo</label>*@
                         @*@Html.LabelFor(m => m.Email)*@

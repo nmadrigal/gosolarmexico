@@ -1,7 +1,84 @@
-﻿/*
-    -.menu-dashboard
-    */
+﻿/********** LOADING ***********/
+.backdrop {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    color: #FFF;
+    z-index: 100;
+}
 
+.loading-container {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1100;
+}
+
+.loading-content {
+    width: 65px;
+    height: 65px;
+    margin: 0px auto;
+    background-image: url("/Images/loading-sm.gif");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.loading-content-lg {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 120px;
+    height: 120px;
+    margin: 0px auto;
+    background-image: url("/Images/loading-lg.gif");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+/********** VALIDATIONS ***********/
+    /***** Class - error, required *****/
+.error {
+    color: #FF0000;
+}
+
+label.error {
+    margin: 5px 0px;
+}
+    select.error,
+    textarea.error,
+    input.required,
+    input.error,
+    input.input-validation-error,
+    .input-validation-error {
+        background-color: #FFDADA; 
+        border: 0px none;
+        box-shadow: 0px 0px 4px 0px #FF0000;
+    }
+
+    /***** Class - valid  *****/
+    input.valid,
+    input.success,
+    .valid, .success {
+        background-color: #E7fCE5;
+    }
+
+input.required::-webkit-input-placeholder,
+input.error::-webkit-input-placehold,
+input.input-validation-error::-webkit-input-placeholder,
+input.required::-moz-placeholder,
+input.error::-moz-placeholder,
+input.input-validation-error::-moz-placeholder,
+input.required:-ms-input-placeholder,
+input.error:-ms-input-placeholder,
+input.input-validation-error:-ms-input-placeholder {
+    color: rgb(255, 255, 255);
+}
 
 /* Section - main-slider */
 #body section.main-slider {
@@ -159,6 +236,43 @@ section.contact form p textarea {
     letter-spacing: 1px;
 }
 
+
+/***** Class - message *****/
+html body .message-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+html body .message-container .backdrop {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #FFF;
+    z-index: 100;
+    opacity: .7;
+}
+
+html body .message-container .message-content {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+html body .message-container .message-content h1 {
+    color: #FFF;
+    line-height: 26px;
+}
+
+html body .message-container .message-content.error h1 {
+    color: #FF0000;
+}
 
 /***** Class - box-info *****/
 .box-info {

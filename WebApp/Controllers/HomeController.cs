@@ -53,9 +53,9 @@ namespace WebApp.Controllers
                 try
                 {
                     MailMessage mail = new MailMessage();
-                    mail.To.Add("nestor_madrigal@live.com");
+                    mail.To.Add("info@gosolar.com.mx");
                     mail.From = new MailAddress(Request["Email"]);
-                    mail.Subject = "Mensaje de parte de: " + contact.Name + " del estado de: " + contact.State.Text;
+                    mail.Subject = "Mensaje de: " + contact.Name + " " + contact.LastName + " del estado de: " + contact.State.Text;
                     mail.Body = Request["Message"];
                     mail.IsBodyHtml = true;
 

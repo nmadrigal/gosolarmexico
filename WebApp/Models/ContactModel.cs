@@ -9,6 +9,10 @@ namespace WebApp.Models
     public class ContactModel
     {
         [Required]
+        [Display(Name = "Apellido paterno")]
+        public string LastName { get; set; }
+
+        [Required]
         [Display(Name = "Nombre")]        
         public string Name { get; set; }
 
