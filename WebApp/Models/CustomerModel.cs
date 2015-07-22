@@ -9,11 +9,11 @@ namespace WebApp.Models
     public class CustomerModel
     {
         [Required]
-        [Display(Name = "Nombres")]
+        [Display(Name = "Nombre(s)")]
         public string Name { get; set; }
 
         [Required]
-        [Display(Name = "Apellidos")]
+        [Display(Name = "Apellido paterno")]
         public string LastName { get; set; }
 
         [Required]
@@ -50,6 +50,7 @@ namespace WebApp.Models
         [Display(Name = "Estado")]
         public string State { get; set; }
 
+        [Required]
         [Display(Name = "Telefono")]
         public string Phone { get; set; }
 

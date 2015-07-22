@@ -36,7 +36,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <p>
                         @*<label>Estado</label>*@
-                        @Html.DropDownList("State", new SelectList(Enumerable.Empty<SelectListItem>()), "Seleccionar estado", new { @class = "state form-control", @required = "required" })
+                        @Html.DropDownList("State.Text", new SelectList(Enumerable.Empty<SelectListItem>()), "Seleccionar estado", new { @class = "state form-control", @required = "required" })
                         @*<select class="state form-control" required>                            
                                 <option value="0">Estado</option>
                         </select>*@

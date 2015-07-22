@@ -206,7 +206,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:41</publishTime>
     </File>
     <File Include="bin/WebApp.dll">
-      <publishTime>07/16/2015 20:47:16</publishTime>
+      <publishTime>07/17/2015 21:26:13</publishTime>
     </File>
     <File Include="bin/WebApp.pdb">
       <publishTime>06/12/2015 23:47:05</publishTime>
@@ -1004,7 +1004,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2015 19:29:38</publishTime>
     </File>
     <File Include="Scripts/gosolar/WebHome.js">
-      <publishTime>07/17/2015 20:20:09</publishTime>
+      <publishTime>07/17/2015 21:24:04</publishTime>
     </File>
     <File Include="Scripts/html5shiv.js">
       <publishTime>06/21/2015 13:09:25</publishTime>
@@ -1121,7 +1121,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Partials/_Contact.cshtml">
-      <publishTime>07/17/2015 18:16:12</publishTime>
+      <publishTime>07/17/2015 22:12:39</publishTime>
     </File>
     <File Include="Views/Shared/EditorTemplates/Customer.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1160,7 +1160,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/17/2015 20:43:32</publishTime>
+      <publishTime>07/17/2015 22:14:42</publishTime>
     </File>
   </ItemGroup>
 </Project>

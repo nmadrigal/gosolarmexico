@@ -106,22 +106,46 @@ Gosolar.Home = {};
         
         $("#contactForm").validate({
             rules: {
-                Name: "required",
+                Name: {
+                    required: true,
+                    minlength: 3
+                },
+                LastName: {
+                    required: true,
+                    minlength: 3
+                },
                 Email: {
                     required: true,
                     email: true
                 },
-                Phone: "required",
+                Phone: {
+                    required: true,
+                    number: true,
+                    minlength: 6,
+                    maxlength: 10
+                },
                 State: "required",
                 Message: "required"
             },
             messages: {
-                Name: "Por favor escriba su nombre",
+                Name: {
+                    required: "Por favor escriba su nombre",
+                    minlength: "Escriba su nombre completo"
+                },
+                LastName: {
+                    required: "Por favor escriba su primer apellido",
+                    minlength: "Escriba su apellido completo"
+                },
                 Email: {
                     required: "Es necesaria su direccion de correo",
                     email: "Por favor escriba un correo valido: [alguien@dominio.com]"
                 },
-                Phone: "Escriba un numero de telefono",
+                Phone: {
+                    required: "Escriba un numero de telefono",
+                    number: "Escriba solo numeros",
+                    minlength: "Escriba un numero valido",
+                    maxlength: "Escriba un numero valido"
+                },
                 State: "Seleccione un estado",
                 Message: "Por favor escriba sus comentarios"
             },
@@ -171,13 +195,11 @@ Gosolar.Home = {};
     };
 
     g.SubmitContact = function (el) {
-        //g.ValidateRules();
         g.ShowLoading();
-        var form = $("#contactForm");//el;//$(el).parents('form');
-        console.log(form.serialize());
+        var form = $("#contactForm");
         $.ajax({
             type: "POST",
-            url: "/Home/ContactForm",//form.attr('action'),
+            url: "/Home/ContactForm",
             data: form.serialize(),
             success: function (response) {
                 var el = $(".contact");

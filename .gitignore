@@ -1,2 +1,5 @@
 *.dll
 *.dll
+WebApp/obj/Release/WebApp.dll
+WebApp/obj/Release/WebApp.pdb
+WebApp/bin/WebApp.pdb
