@@ -67,7 +67,7 @@ namespace WebApp
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap*"));
 
             bundles.Add(new ScriptBundle("~/bundles/foundationscript").Include(
-                "~/Scripts/Framework/foundation/foundation.js",
+                "~/Scripts/Framework/foundation/foundation.min.js",
                 "~/Scripts/Framework/foundation/foundation.offcanvas.js",
                 "~/Scripts/Framework/foundation/foundation.orbit.js"));
 
