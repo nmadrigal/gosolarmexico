@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Rewards";
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
+
+@*<h2>Rewards</h2>*@
+<div class="row">
+    <div class="large-12">
+        <hgroup class="text-center">
+            <h1>$ 250</h1>
+            <h3>Total de recompensas</h3>
+        </hgroup>
+    </div>
+</div>
+<div class="row">
+    <div class="panel small-6 medium-6 large-6 columns">
+        <hgroup>
+            <h2>2</h2>
+            <h4>Total de referidos</h4>
+        </hgroup>
+    </div>
+    <div class="panel small-6 medium-6 large-6 columns">
+        <hgroup>
+            <h2>$ 100</h2>
+            <h4>Posibles</h4>
+        </hgroup>
+    </div>
+</div>
+<script>
+    $(".tab-bar .left-small .menu-icon").hide();
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+</script>

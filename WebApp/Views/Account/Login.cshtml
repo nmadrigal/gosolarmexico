@@ -36,7 +36,7 @@
                     <p class="hidden">
                         @Html.ValidationMessageFor(m => m.Password, "Requerido")
                     </p>
-                    <div class="actions">
+                    <div class="row actions">
                         <ul>
                             <li>
                                 <a class="link-primary" href="@Url.Action("Register", "Account")">Nuevo Embajador</a>
@@ -45,8 +45,8 @@
                                 <a class="link-primary" href="#">Olvide mi contraseña</a>
                             </li>
                         </ul>            
-                        <p>
-                            <button class="btn btn-lg btn-primary" type="submit">Entrar</button>
+                        <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <button class="btn btn-warning btn-block" type="submit">Entrar</button>
                         </p>    
                     </div>  
                 }

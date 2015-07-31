@@ -9,6 +9,11 @@ GosolarApp.Home = {};
     var newReferralAddress;
     g.Init = function () {       
         g.GetLocation();
+        //$(".main-section .main-menu a").unbind("click");
+        //$(".main-section .main-menu a").bind("click", function () {
+        //    $(".tab-bar .left-small .menu-icon").hide();
+        //});
+
         $(".get-address").unbind("click");
         $(".get-address").bind("click", function (e) {            
             g.InitialMapGetAddress();

@@ -63,6 +63,23 @@ html {
     warning -   #FA4241
 */
 
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #727272;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .bg-primary {
     background-color: #FB8132;
     color: #FFF;
@@ -127,7 +144,7 @@ header .container-fluid {
 }
 
 .body-login .login-container {
-    height: 100%;
+    height: 100vh;
     background: url("/Images/bg-login.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,8 +158,8 @@ header .container-fluid {
     text-align: center;
 }
 
-.body-login .login-content .row {
-    margin: 40px 0px;
+.body-login .login-content > .row {
+    margin-top: 40px;
 }
 
 .body-login .login-content figure img {

@@ -207,6 +207,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
+    <Compile Include="Controllers\RewardsController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -500,7 +501,9 @@
     </None>
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\gosolar\WebHome.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -570,6 +573,7 @@
     <Content Include="Views\Panel\CustomerDetail.cshtml" />
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
     <Content Include="Views\Shared\_MobileLoginLayout.cshtml" />
+    <Content Include="Views\Rewards\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

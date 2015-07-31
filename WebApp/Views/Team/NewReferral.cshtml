@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="row">
-            <button type="submit" class="button radius expand">Enviar</button>
+            <button type="submit" class="button radius expand">Agregar</button>
         </div>
     </div>    
     @section Scripts {
@@ -164,3 +164,10 @@
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
 
+<script>
+    $(".tab-bar .left-small .menu-icon").hide();
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+</script>

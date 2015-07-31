@@ -1,192 +1,86 @@
 ﻿@model WebApp.Models.CustomerModel
 @{
-    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_MobileLoginLayout.cshtml";
+    //ViewBag.Title = "Register";
 }
-<div class="container" style="text-align: center; margin-top: 10px">
-    <div class="row">
-        <span style="color: white; font-size: larger">Registrate como Embajador</span>
-    </div>
+<section class="new-ambassador">    
+    <h3 class="text-center">Se parte de nuestro equipo</h3>    
     @using (Html.BeginForm())
     {
-        @Html.AntiForgeryToken()        
-        <div class="row" style="margin-top: 10px">
-            <div class="col-xs-6">
-                <div>
-                    @Html.LabelFor(m => m.Name, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.Name)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.Name, "Requerido")
-                </div>
+        @Html.AntiForgeryToken() 
+        <div class="container">
+            <div class="row">
+                   <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            @*@Html.LabelFor(m => m.LastName)*@
+                            @Html.TextBoxFor(m => m.LastName, "Requerido", new { @placeholder = "Apellido paterno" })
+                        </p>
+                        @*@Html.ValidationMessageFor(m => m.LastName, "Requerido")*@
+                    </div>
+              
+                    <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            @*<label>Apellido materno</label>*@
+                            <input type="text" placeholder="Apellido materno" />
+                        </p>
+                    </div>
+           
+                    <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            @*@Html.LabelFor(m => m.Name)*@
+                            @Html.TextBoxFor(m => m.Name, new { @placeholder = "Nombre (s)" })
+                        </p>   
+                        @*@Html.ValidationMessageFor(m => m.Name, "Requerido")*@             
+                    </div>
+               
+                    <div class="small-12 medium-6 large-5 columns">
+                        <p>
+                            @*@Html.LabelFor(m => m.Email)*@            
+                            @Html.TextBoxFor(m => m.Email, new { @placeholder = "Correo" })
+                        </p>                
+                        @*@Html.ValidationMessageFor(m => m.Email, "Requerido")*@                
+                    </div>  
+                
+                    <div class="small-6 medium-5 large-3 columns">
+                        <p>
+                            @*@Html.LabelFor(m => m.Phone)*@           
+                            @*@Html.TextBoxFor(m => m.Phone, new { @placeholder = "Telefono" })*@
+                            <input type="text" id="Phone" name="Phone" required="required" pattern="\d*" />
+                        </p>
+                    </div>
+               
+                    <div class="small-6 medium-2 large-2 columns">
+                        <p>
+                            @*<label>Edad</label>*@
+                            <input type="number" min="17" max="90" value="18"/>
+                        </p>
+                    </div>
+                
             </div>
-            <div class="col-xs-6">
-                <div>
-                    @Html.LabelFor(m => m.LastName, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.LastName)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.LastName, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.Email, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.Email)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.Email, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div>
-                    @Html.LabelFor(m => m.Mobile, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.Mobile)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.Mobile, "Requerido")
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div>
-                    @Html.LabelFor(m => m.Phone, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.Phone)
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.Street, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.Street)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.Street, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div>
-                    @Html.LabelFor(m => m.ExternalNum, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.ExternalNum, new { style = "width:80px" })
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.ExternalNum, "Requerido")
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div>
-                    @*@Html.LabelFor(m => m.InteriorNum, new { style = "font-size: small;font-family:sans-serif" })*@
-                    <span style="font-size: small; font-family: sans-serif">Numero Int</span>
-                </div>
-                <div>
-                    @*@Html.TextBoxFor(m => m.InteriorNum, new { style = "width:80px" })*@
-                    <input type="text" style="width: 80px" name="InteriorNum" />
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.ResidentialArea, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.ResidentialArea)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.ResidentialArea, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.ZipCode, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.ZipCode, new { style = "width:80px" })
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.ZipCode, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.City, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.City)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.City, "Requerido")
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <div>
-                    @Html.LabelFor(m => m.State, new { style = "font-size: small;font-family:sans-serif" })
-                </div>
-                <div>
-                    @Html.TextBoxFor(m => m.State)
-                </div>
-                <div>
-                    @Html.ValidationMessageFor(m => m.State, "Requerido")
-                </div>
-            </div>
-        </div>
+        
+    
         @Html.ValidationSummary(true)
-        <div class="row" style="margin-top: 10px">
-            <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
-        </div> 
+       @* <div class="row text-center">
+            <div class="small-12 medium-12 large-12">
+                <p>
+                    <a href="#" class="button small secondary radius get-address" data-reveal-id="getAddressModal">Obtener direccion</a>
+                </p>
+            </div>
+        </div>*@
+        <div class="row container">
+            <button type="submit" class="button radius expand">Agregar</button>
+        </div>
+    </div>
     }
 
-</div>
+</section>
+<script>
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+</script>
 
-@*@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary()
-
-    <fieldset>
-        <legend>Registration Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
-            </li>
-        </ol>
-        <input type="submit" value="Register" />
-    </fieldset>*@
-}
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

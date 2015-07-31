@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_MobileLayout.cshtml";
-    ViewBag.Title = "Cerca de mi";
+    //ViewBag.Title = "Cerca de mi";
 }
 
 <div class="container-fluid">
@@ -84,7 +84,9 @@
         }
     }
     window.onload = InitializeMap;
+    $(".tab-bar .left-small .menu-icon").hide();
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
 </script>
-
-
-
