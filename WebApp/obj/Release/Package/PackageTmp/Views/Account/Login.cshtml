@@ -11,42 +11,42 @@
             </figure>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="small-12 medium-12 large-12 columns">
                 @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
                 {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true)
-                    <p class="hidden">
+                    @*<p class="hide">
                         @Html.LabelFor(m => m.UserName)
-                    </p>
+                    </p>*@
                     <p class="username">
                         <span class="glyphicon glyphicon-user"></span>
                         @Html.TextBoxFor(m => m.UserName, new { @placeholder="Usuario / Correo" })
                     </p>
-                    <p class="hidden">
+                    @*<p class="hide">
                         @Html.ValidationMessageFor(m => m.UserName, "Requerido")
                     </p>
-                    <p class="hidden">
+                    <p class="hide">
                         @Html.LabelFor(m => m.Password)
-                    </p>
+                    </p>*@
                     <p class="password">
                         <span class="glyphicon glyphicon-lock"></span>
                         @Html.PasswordFor(m => m.Password, new { @placeholder="Contraseña" })
                     </p>
-                    <p class="hidden">
+                    @*<p class="hide">
                         @Html.ValidationMessageFor(m => m.Password, "Requerido")
-                    </p>
-                    <div class="actions">
-                        <ul>
+                    </p>*@
+                    <div class="row actions">
+                        <ul class="small-12 medium-12 large-12 columns">
                             <li>
                                 <a class="link-primary" href="@Url.Action("Register", "Account")">Nuevo Embajador</a>
                             </li>
                             <li>
-                                <a class="link-primary" href="#">Olvide mi contraseña</a>
+                                <a class="link-primary forgot-password" href="#" data-reveal-id="fogotPassword">Olvide mi contraseña</a>
                             </li>
                         </ul>            
-                        <p>
-                            <button class="btn btn-lg btn-primary" type="submit">Entrar</button>
+                        <p class="small-12 medium-12 large-12 columns">
+                            <button class="button radius expand" type="submit">Entrar</button>
                         </p>    
                     </div>  
                 }
@@ -55,6 +55,29 @@
     </div>
     <div class="sepia-filter"></div>
 </section>
+
+<div id="forgotPasswordModal" class="reveal-modal small forgot-password-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Recuperar contraseña</h2>
+  <div data-alert class="alert-box info">
+      <p>Por favor escriba su direccion de correo electronico, despues de presione el boton "Recuperar", usted recibira un correo electronico con las instrucciones para recuperar su contraseña</p>
+      <a href="#" class="close">&times;</a>
+    </div>
+    <form>
+        <div class="row">
+            <div class="small-12 medium-12 large-12">
+                <p>
+                    <input type="email" placeholder="Correo" />
+                </p>
+            </div>
+        </div>
+        <div class="row actions">
+            <div class="small-12 medium-12 large-12">
+                <button type="submit" class="button radius expand">Recuperar</button>
+            </div>
+        </div>
+    </form>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 @*<section class="social" id="socialLoginForm">
     <h2>Use another service to log in.</h2>
     @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })

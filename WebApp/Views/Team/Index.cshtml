@@ -5,6 +5,17 @@
     ViewBag.Title = "Mi Equipo";
     int total = 0;
 }
+<script>
+    $(".tab-bar .right-small").show();
+</script>
+<aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><a href="@Url.Action("NewReferral", "Team")" class="sepia-filter"><span class="icn-sm icn-add-person"></span>Agregar</a></li>
+        <li><a href="#">Filtrar</a></li>
+        @*<li><a href="#">...</a></li>*@
+      </ul>
+    </aside>
+
 <div data-alert class="alert-box secondary">
     <p>This is a warning his is a warning his is a warning alert examplealert example his is a warning alert examplealert example</p>
     <a href="#" class="close">&times;</a>

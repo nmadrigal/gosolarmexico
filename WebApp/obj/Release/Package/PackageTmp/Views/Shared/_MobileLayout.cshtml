@@ -33,18 +33,18 @@
     
     <script src="~/Scripts/less-1.5.1.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-   
 </head>
 <body>
  <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar bg-primary">
       <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+        <a class="left-off-canvas-toggle menu-icon toggle-topbar" href="#"><span></span></a>
+        <a class="icn-sm icn-arrow-left" href="#"></a>
       </section>
 
       <section class="middle tab-bar-section">
-        <h1 class="title">User Name</h1>
+        <h1 class="title">@User.Identity.Name</h1>
       </section>
 
       <section class="right-small">
@@ -56,12 +56,11 @@
         <header class="bg-secondary">
             <hgroup>
                 <h1>User Name</h1>
-                <h3>username@gosolarmexico.com.mx</h3>
+                <h3>@User.Identity.Name</h3>
             </hgroup>
         </header>
-        <ul class="off-canvas-list">
-        
-            <li><a href="#"><span class="icn-sm icn-lock" ></span>Cambiar contraseña</a></li>
+        <ul class="off-canvas-list">            
+            <li><a href="#" class="change-password"><span class="icn-sm icn-lock"></span>Cambiar contraseña</a></li>
             <li><a href="#"><span class="icn-sm icn-settings"></span>Ajustes</a></li>
             <li>
                 @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
@@ -71,14 +70,6 @@
                     }
       
         </ul>
-    </aside>
-
-    <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Users</label></li>
-        <li><a href="#">Hari Seldon</a></li>
-        <li><a href="#">...</a></li>
-      </ul>
     </aside>
 
     <section class="main-section">
@@ -92,6 +83,15 @@
   </div>
 </div>
     <!-- Modals zone -->
+    <div id="changePasswordModal" class="reveal-modal small change-password-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Cambiar contraseña</h2>
+        @*<div data-alert class="alert-box info">
+          <p>Por favor escriba su direccion de correo electronico, despues de presione el boton "Recuperar", usted recibira un correo electronico con las instrucciones para recuperar su contraseña</p>
+          <a href="#" class="close">&times;</a>
+        </div>*@
+        @Html.Partial("~/Views/Partials/_ChangePasswordPartial.cshtml")
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
     <!-- -->
     @RenderSection("scripts", required: false)
     @Scripts.Render("~/bundles/gosolarMobile")

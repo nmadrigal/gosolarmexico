@@ -239,6 +239,8 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\Linearicons\LinearFont.css" />
+    <Content Include="Content\fonts\Linearicons\Linearicons.svg" />
     <Content Include="Content\foundation\foundation.min.css" />
     <Content Include="Content\foundation\normalize.css" />
     <Content Include="Content\medium.css" />
@@ -446,6 +448,10 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="manifest.json" />
+    <Content Include="Content\fonts\Linearicons\Linearicons.eot" />
+    <Content Include="Content\fonts\Linearicons\Linearicons.ttf" />
+    <Content Include="Content\fonts\Linearicons\Linearicons.woff" />
+    <Content Include="Content\fonts\Linearicons\Linearicons.woff2" />
     <None Include="Properties\PublishProfiles\JhonatanWork.pubxml" />
     <Content Include="Scripts\Framework\angular-route.js" />
     <Content Include="Scripts\Framework\angular-route.min.js" />
@@ -526,7 +532,6 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
     <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
@@ -574,6 +579,7 @@
     <Content Include="Views\Shared\_MobileLayout.cshtml" />
     <Content Include="Views\Shared\_MobileLoginLayout.cshtml" />
     <Content Include="Views\Rewards\Index.cshtml" />
+    <Content Include="Views\Partials\_ChangePasswordPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

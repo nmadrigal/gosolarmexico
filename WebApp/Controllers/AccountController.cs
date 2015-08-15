@@ -36,7 +36,7 @@ namespace WebApp.Controllers
         [Authorize]
         public ActionResult ChangePassword()
         {
-            return View();
+            return PartialView("~/Account/_ChangePasswordPartial");
         }
 
         [Authorize]

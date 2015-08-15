@@ -3,6 +3,21 @@
     Layout = "~/Views/Shared/_MobileLoginLayout.cshtml";
     //ViewBag.Title = "Register";
 }
+<nav class="tab-bar bg-primary">
+      <section class="left-small">
+        @*<a class="left-off-canvas-toggle menu-icon toggle-topbar" href="#"><span></span></a>*@
+        <a class="icn-sm icn-arrow-left" href="#"></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">Gosolar Mexico</h1>
+      </section>
+
+      @*<section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>*@
+    </nav>
+
 <section class="new-ambassador">    
     <h3 class="text-center">Se parte de nuestro equipo</h3>    
     @using (Html.BeginForm())
@@ -45,14 +60,14 @@
                         <p>
                             @*@Html.LabelFor(m => m.Phone)*@           
                             @*@Html.TextBoxFor(m => m.Phone, new { @placeholder = "Telefono" })*@
-                            <input type="text" id="Phone" name="Phone" required="required" pattern="\d*" />
+                            <input type="text" id="Phone" name="Phone" required="required" pattern="\d*" placeholder="Telefono"/>
                         </p>
                     </div>
                
                     <div class="small-6 medium-2 large-2 columns">
                         <p>
                             @*<label>Edad</label>*@
-                            <input type="number" min="17" max="90" value="18"/>
+                            <input type="number" min="17" max="90" placeholder="Edad"/>
                         </p>
                     </div>
                 
@@ -67,8 +82,10 @@
                 </p>
             </div>
         </div>*@
-        <div class="row container">
-            <button type="submit" class="button radius expand">Agregar</button>
+        <div class="container">
+            <div class="small-12 medium-12 large-12 columns">
+                <button type="submit" class="button radius expand">Agregar</button>
+            </div>
         </div>
     </div>
     }

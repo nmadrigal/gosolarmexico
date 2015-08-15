@@ -100,6 +100,11 @@ h3 {
     color: #FFF;
 }
 
+.bg-gray {
+    background-color: #CAC3BC;
+    color: #FFF;
+}
+
 body {
     background-color: #EEE;
     color: #535353;     
@@ -132,6 +137,20 @@ header .container-fluid {
 }
 
 .sidebar-left-in, .sidebar-right-in { display: block !important; }
+
+/******* Class - off-canvas *******/
+.off-canvas-wrap {
+    min-height: 100vh;
+}
+
+.off-canvas-wrap .inner-wrap,
+.off-canvas-wrap .inner-wrap section {
+    height: 100%;
+}
+
+.right-off-canvas-menu {
+    top: -45px;
+}
 
 /***** login container *****/
 
@@ -177,21 +196,28 @@ header .container-fluid {
 
 .body-login .login-content form span {
     position: absolute;
-    margin: 10px;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
     color: #727272;
+}
+
+.body-login .login-content form .username span {
+    width: 22px;
+    
 }
 
 .body-login .login-content form input {
     width: 100%;
     height: 35px;
+    margin: 0px;
     padding: 5px 5px 0px 30px;
     border: 1px solid #999;
 }
 
 .body-login .login-content form input[placeholder] {
-    color: #727272;
+    color: #555;
     font-weight: 600;
-
 }
 
 .body-login .login-content form .username input {
@@ -216,4 +242,9 @@ header .container-fluid {
 /***** Class - container *****/
 .container {
     margin: 25px 0px;
+}
+
+/********* Glyphicons ********/
+.icnglyp {
+    font-family: "Linearicons";
 }

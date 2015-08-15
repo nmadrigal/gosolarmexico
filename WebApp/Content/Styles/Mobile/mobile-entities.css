@@ -242,6 +242,10 @@ a.link-primary:focus {
 }
 
 /* Class - tab-bar */
+.tab-bar .right-small {
+    display: none;
+}
+
 .tab-bar .left-small,
 .tab-bar .right-small {
     border: 0px none;
@@ -294,13 +298,30 @@ a.link-primary:focus {
   width: 100%;
 }
 
-.example-orbit-content li div {
+.orbit-container .slide-orbit {
+    max-height: 100vh;
+}
+
+.orbit-container .slide-orbit .slide {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: 0px 0px;   
+}
+
+.orbit-container .slide-orbit .volante {
+    background-image: url("/Images/News/volante1.jpg");
+}
+
+.slide-orbit-content li div {
   color: white;
   background: #2ba6cb;
   padding: 30px 40px; 
 }
 
-  .example-orbit-content li div h1, .example-orbit-content li div h2, .example-orbit-content li div h3 {
+  .slide-orbit-content li div h1, .slide-orbit-content li div h2, .slide-orbit-content li div h3 {
     color: white; 
  }
 
@@ -541,15 +562,22 @@ a.link-primary:focus {
     margin: 30px 0px;
 }
 
+/******* Class - reveal-modal *****/
+.reveal-modal h2 {
+    margin-bottom: 15px;
+}
+
 /***** Class - main-menu *****/
 .main-menu a {
     display: block;
     padding: 40px;
     box-shadow: none;
+    text-align: center;
 }
 
 .main-menu a span {
     margin: 0px auto;
+    font-size: 60px;
 }
 
 .main-menu a label {
@@ -557,12 +585,30 @@ a.link-primary:focus {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+    color: #FA6809;
 }
 
 .main-menu a.bg-primary label {
     color: #FFF;
 }
 
+
+/******* Class - rewars ********/
+.rewards {
+    margin-top: 1.5rem;
+}
+
+.rewards .first {
+    margin-bottom: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    background-color: rgba(93, 164, 35, 0.27);
+}
+
+.rewards span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+}
 
 /* Class - map-canvas */
 .map-canvas {

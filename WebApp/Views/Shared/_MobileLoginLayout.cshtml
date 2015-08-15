@@ -35,23 +35,16 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body class="body-login">
-    <nav class="tab-bar bg-primary">
-      <section class="left-small">
-        @*<a class="left-off-canvas-toggle menu-icon toggle-topbar" href="#"><span></span></a>*@
-        <a class="icn-sm icn-arrow-left" href="#"></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title">Gosolar Mexico</h1>
-      </section>
-
-      @*<section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>*@
-    </nav>
+    
     <div>
-                @RenderBody()
+        @RenderBody()
     </div>
     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/gosolarMobile")
+    <script>
+
+        $(document).foundation({});
+        GosolarApp.Home.Init();
+    </script>
 </body>
 </html>

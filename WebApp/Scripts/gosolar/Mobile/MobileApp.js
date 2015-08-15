@@ -14,6 +14,13 @@ GosolarApp.Home = {};
         //    $(".tab-bar .left-small .menu-icon").hide();
         //});
 
+        $(".forgot-password").bind("click", function () {
+            $('#forgotPasswordModal').foundation('reveal', 'open');
+        });
+        $(".change-password").bind("click", function () {
+            $('#changePasswordModal').foundation('reveal', 'open');
+        });
+
         $(".get-address").unbind("click");
         $(".get-address").bind("click", function (e) {            
             g.InitialMapGetAddress();

@@ -22,6 +22,15 @@ namespace WebApp
                 "~/Content/Styles/overrides.css"
             ));
 
+            bundles.Add(new StyleBundle("~/Content/linearFont").Include(
+                "~/Content/fonts/Linearicons/LinearFont.eot",
+                "~/Content/fonts/Linearicons/LinearFont.svg",
+                "~/Content/fonts/Linearicons/LinearFont.ttf",
+                "~/Content/fonts/Linearicons/LinearFont.woff",
+                "~/Content/fonts/Linearicons/LinearFont.woff2",
+                "~/Content/Styles/fonts/Linearicons/LinearFont.css"
+            ));
+
             /**** for mobile app *****/
             bundles.Add(new StyleBundle("~/Content/mobileCss").Include(
                 //"~/fonts/fontawesome-webfont.woff",
