@@ -342,6 +342,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\map_icon.png" />
     <Content Include="Images\moreblue_background.jpg" />
+    <Content Include="Images\News\volante1.jpg" />
     <Content Include="Images\red_sun_icon.png" />
     <Content Include="Images\slide1.jpg" />
     <Content Include="Images\slide2.jpg" />
