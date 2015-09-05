@@ -171,18 +171,18 @@ header .container-fluid {
 }
 
 .body-login .login-content {
-    width: 320px;
+    width: 90vw;
     margin: 0px auto;
     padding: 4% 0px;
     text-align: center;
 }
 
 .body-login .login-content > .row {
-    margin-top: 40px;
+    margin-top: 5vh;
 }
 
 .body-login .login-content figure img {
-    width: 60%;
+    width: 25vw;
 }
 
 /*.body-login .login-content a {
@@ -196,48 +196,60 @@ header .container-fluid {
 
 .body-login .login-content form span {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 3.5vh;
+    left: 2vw;
     margin: 0px;
-    color: #727272;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 6vw;
 }
 
 .body-login .login-content form .username span {
-    width: 22px;
+    /*width: 5.5vw;*/
     
 }
 
 .body-login .login-content form input {
     width: 100%;
-    height: 35px;
+    height: 12vh;
     margin: 0px;
-    padding: 5px 5px 0px 30px;
-    border: 1px solid #999;
+    padding: 0vh 2vw 0px 7vh;
+    border: 0px none;
+    background-color: transparent;
+    border-bottom: .5vw solid #CCC;
+    color: #FFF;
+    font-size: 6vw;
+    outline: none;
+    box-shadow: none;
 }
 
 .body-login .login-content form input[placeholder] {
-    color: #555;
-    font-weight: 600;
+/*    color: #555;
+    font-weight: 600;*/
 }
 
-.body-login .login-content form .username input {
-    -webkit-border-top-left-radius: 5px;
+/*.body-login .login-content form .username input {
+    /*-webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
+}*/
 
 .body-login .login-content form .password input {
-    -webkit-border-bottom-right-radius: 5px;
+    /*-webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomright: 5px;
     -moz-border-radius-bottomleft: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-bottom: .5vw solid #CCC;*/
 }
 
+.body-login .login-content form .actions a {
+    color: #FFF;
+}
 
 /***** Class - container *****/
 .container {
