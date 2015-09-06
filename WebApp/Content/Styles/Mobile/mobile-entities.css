@@ -586,6 +586,7 @@ a.link-primary:focus {
     font-size: 20px;
     font-weight: 700;
     color: #FA6809;
+    white-space: nowrap;
 }
 
 .main-menu a.bg-primary label {
