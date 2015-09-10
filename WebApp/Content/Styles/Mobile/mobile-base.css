@@ -149,8 +149,18 @@ header .container-fluid {
 }
 
 .right-off-canvas-menu {
-    top: -13vh;
+    top: -11vh;
     height: 100vh;
+    background: #FFF;
+}
+
+.right-off-canvas-menu .off-canvas-list li {
+    height: 6vh;
+    vertical-align: middle;
+}
+
+.right-off-canvas-menu .off-canvas-list a {
+    color: #727272;
 }
 
 /***** login container *****/

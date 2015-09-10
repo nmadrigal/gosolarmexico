@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Gosolar Mexico.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.Xamarin_Android_API_21" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
+    <Files>
+      <File FileName="MainActivity.cs" Line="24" Column="67" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Gosolar_220Mexico AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

@@ -1,0 +1,14 @@
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\bin\Release\AndroidApp.dll
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\bin\Release\AndroidApp.pdb
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\bin\Release\AndroidApp.AndroidApp.apk
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\bin\Release\AndroidApp.AndroidApp-Signed.apk
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\Gosolar Mexico.csprojResolveAssemblyReference.cache
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\AndroidApp.dll
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\AndroidApp.pdb
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\android\bin\AndroidApp.AndroidApp.apk
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\res\layout\main.xml
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\res\values\strings.xml
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\res\drawable\icon.png
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\res\drawable\fluicon.jpg
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\R.cs.flag
+C:\Users\Nestor\Documents\GitHub\gosolarmexico\AndroidApp\obj\Release\uploadflags.txt

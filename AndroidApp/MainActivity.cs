@@ -9,7 +9,7 @@ using Android.Webkit;
 
 namespace AndroidApp
 {
-    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/FluIcon", Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Label = "Gosolar Mexico", MainLauncher = true, Icon = "@drawable/FluIcon", Theme = "@android:style/Theme.NoTitleBar")]
     public class MainActivity : Activity
     {
         WebView web_view;
@@ -23,7 +23,7 @@ namespace AndroidApp
 
             web_view = FindViewById<WebView>(Resource.Id.webView);
             web_view.Settings.JavaScriptEnabled = true;
-            web_view.LoadUrl("http://www.facebook.com");        
+			web_view.LoadUrl("http://www.gosolarmexico.com.mx/Account/Login");        
 
             web_view.SetWebViewClient(new MyWebViewClient());
         }
