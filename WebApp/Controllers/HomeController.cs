@@ -5,6 +5,7 @@ using WebApp.Models;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
+using WebApp.ServiceReference1;
 
 namespace WebApp.Controllers
 {

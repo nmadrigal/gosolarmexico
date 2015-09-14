@@ -500,7 +500,7 @@ a.link-primary:focus {
 }
 
 
-/* Class - icn */
+/*********** Class - icn ************/
 .icn-sm {
     display: inline-block;
     width: 24px;
@@ -602,10 +602,58 @@ a.link-primary:focus {
     color: #FFF;
 }
 
-
-/******* Class - rewars ********/
+/*************** Class - admin *************/
+.admin .panel.callout { 
+    background: #FFF;   
+    border: 0px none;
+    border-left-width: 2vw;
+    border-left-style: solid;
+}
+.admin .panel.callout span {
+   
+}
+.admin .panel.callout select {
+    margin: 2vh 0px;
+    color: #FFF;
+    border: 0px none;
+    font-size: 5vw;
+    cursor: pointer;
+}
+.admin .panel.contacted {
+    /*border-color: #008CBA;*/
+    border-left-color: #008CBA;
+}
+.admin .panel.contacted select {
+    background: #008CBA;    
+}
+.admin .panel.negotiation {
+    /*border-color: #FEE110;*/
+    border-left-color: #FEE110;
+}
+.admin .panel.negotiation select {
+    background: #FEE110;
+}
+.admin .panel.success {
+    /*border-color: #43AC6A;*/
+    border-left-color: #43AC6A;
+}
+.admin .panel.success select {
+    background: #43AC6A;
+}
+.admin .panel.nonviable {
+    /*border-color: #F04124;*/
+    border-left-color: #F04124;
+} 
+.admin .panel.nonviable select {
+    background: #F04124;
+}
+/******* Class - rewards ********/
 .rewards {
     margin-top: 1.5rem;
+}
+
+.rewards .panel {
+    background-color: #D2D2BE;
 }
 
 .rewards .first {

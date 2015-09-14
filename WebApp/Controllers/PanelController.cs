@@ -56,9 +56,7 @@ namespace WebApp.Controllers
 
             var customer = service.GetCustomerById(Id);
             var address = service.GetAddressByOwnerId(Id);
-
             CustomerCompleteModel customerComplete = new CustomerCompleteModel();
-
             customerComplete.Name = customer.Name;
             customerComplete.LastName = customer.LastName;
             customerComplete.Email = customer.Email;
@@ -71,7 +69,6 @@ namespace WebApp.Controllers
             customerComplete.City = address.City;
             customerComplete.State = address.State;
             customerComplete.ZipCode = address.ZipCode;
-
             return View("CustomerDetail", customerComplete);
         }
     }
