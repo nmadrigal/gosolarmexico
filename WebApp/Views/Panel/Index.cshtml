@@ -7,10 +7,10 @@
 {	
     <div class="container admin">
         <div class="row">
-            <div class="small-12">
+            <div class="small-12 medium-12 large-12">
                 <ul class="tabs" data-tab role="tablist">
-                    <li class="tab-title small-6 active"><a href="#ambassador">Embajadores</a></li>
-                    <li class="tab-title small-6"><a href="#referred">Referidos</a></li>                    
+                    <li class="tab-title small-6 medium-6 large-6 active"><a href="#ambassador">Embajadores</a></li>
+                    <li class="tab-title small-6 medium-6 large-6"><a href="#referred">Referidos</a></li>                    
                 </ul>
        @*         <a href="@Url.Action("Index", "Ambassador")">
                     <img src="~/Images/appbar.arrow.left.png" style="width: 60px; height: 60px" /></a>
@@ -48,9 +48,9 @@
                                         break;
                                 }
                                 <div class="row">
-                                    <div class="small-12 panel callout @wrapperClass">                             
+                                    <div class="small-12 medium-12 large-12 panel callout @wrapperClass">                             
                                             @Html.HiddenFor(m => Model[i].Id)
-                                            <label>@Model[i].Name @Model[i].LastName</label>
+                                            <a href="Panel/ViewCustomerDetail/@Model[i].Id"><label>@Model[i].Name @Model[i].LastName</label></a>
                         
                                             @*<div class="small-12">*@
                                
@@ -79,15 +79,17 @@
                                                 @*}
                                             </div>*@
                                             @*<div class="small-12">*@
-                                            @Html.ActionLink(
+                                            @*@Html.ActionLink(
                                             linkText: "Ver",
                                             actionName: "ViewCustomerDetail",
                                             controllerName: "Panel",
                                             routeValues: new { Id = Model[i].Id },
                                             htmlAttributes: new { style = "color:blue" }
-                                            )
+                                            )*@
                                         @*</div>*@                             
                                     </div> 
+                                    @*@Html.Partial("~/Views/Panel/CustomerDetail.cshtml", new ViewDataDictionary { { "Id", Model[i].Id } })*@
+                                    
                                 </div>   
                             }
                                           
@@ -104,18 +106,19 @@
                             <div class="row">
                                 @if ((bool)Model[i].IsAmbassador) 
                                 {
-                                    <div class="small-12 panel">                             
-                                            @Html.HiddenFor(m => Model[i].Id)
-                                            @Model[i].Name @Model[i].LastName                                                                   
-                                            <span>@Model[i].ReferencedByEmail</span>                                                                                      
+                                    <div class="small-12 medium-12 large-12 panel">                             
+                                        @Html.HiddenFor(m => Model[i].Id)
+                                        @*@Model[i].Name @Model[i].LastName  *@
+                                        <a href="Panel/ViewCustomerDetail/@Model[i].Id"><label>@Model[i].Name @Model[i].LastName</label></a>                                                                 
+                                        <span>@Model[i].ReferencedByEmail</span>                                                                                      
                                                
-                                            @Html.ActionLink(
-                                            linkText: "Ver",
-                                            actionName: "ViewCustomerDetail",
-                                            controllerName: "Panel",
-                                            routeValues: new { Id = Model[i].Id },
-                                            htmlAttributes: new { style = "color:blue" }
-                                            )                                                                 
+                                        @*@Html.ActionLink(
+                                        linkText: "Ver",
+                                        actionName: "ViewCustomerDetail",
+                                        controllerName: "Panel",
+                                        routeValues: new { Id = Model[i].Id },
+                                        htmlAttributes: new { style = "color:blue" }
+                                        )*@                                                                 
                                     </div>   
                                 }
                             </div>                
@@ -125,7 +128,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="small-12" style="margin-top: 10px">
+            <div class="small-12 medium-12 large-12">
                 <button type="submit" class="button radius expand">Guardar</button>
             </div>
         </div>

@@ -70,6 +70,8 @@ namespace WebApp.Controllers
             customerComplete.State = address.State;
             customerComplete.ZipCode = address.ZipCode;
             return View("CustomerDetail", customerComplete);
+            //return PartialView("~/Panel/CustomerDetail", customerComplete);
+            
         }
     }
 }
