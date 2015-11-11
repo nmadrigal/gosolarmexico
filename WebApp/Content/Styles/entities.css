@@ -84,7 +84,7 @@ input.input-validation-error:-ms-input-placeholder {
 #body section.main-slider {
     height: 100vh;
     padding: 0px;
-    background: url("/Images/solarHome.jpg") no-repeat center top fixed;
+    background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

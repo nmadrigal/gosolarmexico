@@ -45,7 +45,6 @@ namespace WebApp.Controllers
             return PartialView("~/Partials/_Contact");
         }
     
-
         [HttpPost]
         public string ContactForm(ContactModel contact)
         {
@@ -54,18 +53,20 @@ namespace WebApp.Controllers
                 try
                 {
                     MailMessage mail = new MailMessage();
-                    mail.To.Add("info@gosolar.com.mx");
+                    mail.To.Add("nesk27@hotmail.com");
                     mail.From = new MailAddress(Request["Email"]);
                     mail.Subject = "Mensaje de: " + contact.Name + " " + contact.LastName + " del estado de: " + contact.State.Text;
                     mail.Body = Request["Message"];
                     mail.IsBodyHtml = true;
 
                     SmtpClient smtp = new SmtpClient("relay-hosting.secureserver.net");
+                    //SmtpClient smtp = new SmtpClient();
+                    //smtp.Host = "relay-hosting.secureserver.net";
+                    smtp.Port = 25;
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new System.Net.NetworkCredential("admin@gosolarmexico.com.mx", "G@Solar2015mail");
-                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    //smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     smtp.EnableSsl = false;
-
                     smtp.Send(mail);
                     return "OK";
                 }

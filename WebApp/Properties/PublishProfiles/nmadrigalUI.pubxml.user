@@ -206,7 +206,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:41</publishTime>
     </File>
     <File Include="bin/WebApp.dll">
-      <publishTime>08/05/2015 21:35:17</publishTime>
+      <publishTime>10/04/2015 20:01:28</publishTime>
     </File>
     <File Include="bin/WebApp.pdb">
       <publishTime>06/12/2015 23:47:05</publishTime>
@@ -484,6 +484,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/fonts/glyphicons-halflings-regular.woff">
       <publishTime>06/22/2015 21:39:56</publishTime>
     </File>
+    <File Include="Content/fonts/Linearicons/LinearFont.css">
+      <publishTime>08/11/2015 20:33:08</publishTime>
+    </File>
+    <File Include="Content/fonts/Linearicons/Linearicons.eot">
+      <publishTime>08/07/2015 21:13:35</publishTime>
+    </File>
+    <File Include="Content/fonts/Linearicons/Linearicons.svg">
+      <publishTime>08/07/2015 22:12:52</publishTime>
+    </File>
+    <File Include="Content/fonts/Linearicons/Linearicons.ttf">
+      <publishTime>08/07/2015 21:13:35</publishTime>
+    </File>
+    <File Include="Content/fonts/Linearicons/Linearicons.woff">
+      <publishTime>08/07/2015 21:13:35</publishTime>
+    </File>
+    <File Include="Content/fonts/Linearicons/Linearicons.woff2">
+      <publishTime>08/07/2015 21:13:35</publishTime>
+    </File>
     <File Include="Content/foundation/foundation.min.css">
       <publishTime>06/28/2015 14:36:44</publishTime>
     </File>
@@ -503,7 +521,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2015 16:15:02</publishTime>
     </File>
     <File Include="Content/Styles/entities.css">
-      <publishTime>07/26/2015 16:01:17</publishTime>
+      <publishTime>09/23/2015 20:53:47</publishTime>
     </File>
     <File Include="Content/Styles/fonts/fontawesome-webfont.woff">
       <publishTime>06/22/2015 21:38:06</publishTime>
@@ -533,10 +551,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:24</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-base.css">
-      <publishTime>08/03/2015 20:54:11</publishTime>
+      <publishTime>09/09/2015 22:27:13</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-entities.css">
-      <publishTime>08/05/2015 21:21:57</publishTime>
+      <publishTime>09/13/2015 23:37:44</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-overrides.css">
       <publishTime>06/22/2015 12:35:16</publishTime>
@@ -769,6 +787,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/bg-login.png">
       <publishTime>06/22/2015 21:05:06</publishTime>
     </File>
+    <File Include="Images/bg-solarHome.gif">
+      <publishTime>09/23/2015 20:50:31</publishTime>
+    </File>
     <File Include="Images/Blue-ribbon.jpg">
       <publishTime>06/21/2015 13:09:25</publishTime>
     </File>
@@ -831,6 +852,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/moreblue_background.jpg">
       <publishTime>06/21/2015 13:09:25</publishTime>
+    </File>
+    <File Include="Images/News/volante1.jpg">
+      <publishTime>08/11/2015 20:59:50</publishTime>
     </File>
     <File Include="Images/orderedList0.png">
       <publishTime>06/21/2015 13:09:25</publishTime>
@@ -1079,13 +1103,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>08/02/2015 15:07:13</publishTime>
+      <publishTime>09/05/2015 16:19:12</publishTime>
     </File>
     <File Include="Views/Account/Manage.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>07/31/2015 21:09:27</publishTime>
+      <publishTime>08/07/2015 20:15:47</publishTime>
     </File>
     <File Include="Views/Account/_ChangePasswordPartial.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1100,7 +1124,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Ambassador/Index.cshtml">
-      <publishTime>08/05/2015 21:28:02</publishTime>
+      <publishTime>08/11/2015 21:07:50</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1115,19 +1139,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/30/2015 19:41:21</publishTime>
     </File>
     <File Include="Views/Panel/CustomerDetail.cshtml">
-      <publishTime>06/21/2015 13:09:26</publishTime>
+      <publishTime>09/23/2015 20:19:02</publishTime>
     </File>
     <File Include="Views/Panel/Index.cshtml">
-      <publishTime>06/21/2015 13:09:26</publishTime>
+      <publishTime>10/02/2015 21:59:10</publishTime>
     </File>
     <File Include="Views/Partials/_ChangePasswordPartial.cshtml">
-      <publishTime>08/03/2015 19:05:50</publishTime>
+      <publishTime>09/12/2015 18:29:07</publishTime>
     </File>
     <File Include="Views/Partials/_Contact.cshtml">
       <publishTime>07/17/2015 22:12:39</publishTime>
     </File>
     <File Include="Views/Rewards/Index.cshtml">
-      <publishTime>08/03/2015 21:13:24</publishTime>
+      <publishTime>09/12/2015 19:05:14</publishTime>
     </File>
     <File Include="Views/Shared/EditorTemplates/Customer.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
@@ -1136,25 +1160,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>06/21/2015 13:09:26</publishTime>
+      <publishTime>10/02/2015 21:58:46</publishTime>
     </File>
     <File Include="Views/Shared/_html5shiv.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/16/2015 20:46:33</publishTime>
+      <publishTime>09/29/2015 23:08:24</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLayout.cshtml">
-      <publishTime>08/05/2015 21:20:32</publishTime>
+      <publishTime>09/12/2015 18:40:51</publishTime>
     </File>
     <File Include="Views/Shared/_MobileLoginLayout.cshtml">
-      <publishTime>07/31/2015 21:50:38</publishTime>
+      <publishTime>09/12/2015 15:39:47</publishTime>
     </File>
     <File Include="Views/Team/Index.cshtml">
-      <publishTime>08/05/2015 21:22:30</publishTime>
+      <publishTime>09/09/2015 22:09:39</publishTime>
     </File>
     <File Include="Views/Team/NewReferral.cshtml">
       <publishTime>07/29/2015 22:43:01</publishTime>
@@ -1166,7 +1190,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/05/2015 21:35:28</publishTime>
+      <publishTime>10/04/2015 20:03:02</publishTime>
     </File>
   </ItemGroup>
 </Project>
