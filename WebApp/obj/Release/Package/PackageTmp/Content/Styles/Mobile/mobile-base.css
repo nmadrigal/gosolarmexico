@@ -1,0 +1,277 @@
+﻿/*Reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a:hover {
+    text-decoration: none;
+} 
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+    position: relative;    
+}
+body {
+	line-height: 1;
+    font-family: 'Segoe UI', Arial, helvetica;
+}
+ol, ul,
+ol li, ul li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom styles */
+html {
+   
+}
+
+/* colors */
+/*  primary -   #FB8132
+    secondary - #FEE110
+    auxiliary - #FCC217
+    warning -   #FA4241
+*/
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #727272;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.bg-primary {
+    background-color: #FB8132;
+    color: #FFF;
+}
+
+.bg-secondary {
+    background-color: #FEE110;
+    color: #FFF;
+}
+
+.bg-auxiliary {
+    background-color: #FCC217;
+    color: #FFF;
+}
+
+.bg-warning {
+    background-color: #FA4241;
+    color: #FFF;
+}
+
+.bg-gray {
+    background-color: #CAC3BC;
+    color: #FFF;
+}
+
+body {
+    background-color: #EEE;
+    color: #535353;     
+}
+
+#body {
+    height: 100%;
+}
+
+nav.navbar {
+    position: fixed;
+    width: 100vw; 
+    min-height: 55px; 
+    margin: 0px;
+    padding: 5px;  
+    background-color: #FFF;
+    font-family: Impact, Broadway, 'Segoe UI', sans-serif;
+    z-index: 10;    
+}
+    
+header .navbar-default .navbar-collapse {
+    width: 100%;
+    background-color: #FFF;
+    border: 0px none;
+}
+
+header .container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-left-in, .sidebar-right-in { display: block !important; }
+
+/******* Class - off-canvas *******/
+.off-canvas-wrap {
+    min-height: 100vh;
+}
+
+.off-canvas-wrap .inner-wrap,
+.off-canvas-wrap .inner-wrap section {
+    height: 100%;
+}
+
+.right-off-canvas-menu {
+    top: -11vh;
+    height: 100vh;
+    background: #FFF;
+}
+
+.right-off-canvas-menu .off-canvas-list li {
+    height: 6vh;
+    vertical-align: middle;
+}
+
+.right-off-canvas-menu .off-canvas-list a {
+    color: #727272;
+}
+
+/***** login container *****/
+
+.body-login .app {
+    margin: 0px;
+}
+
+.body-login .app .app-body {
+    padding: 0px;
+}
+
+.body-login .login-container {
+    height: 100vh;
+    background: url("/Images/bg-login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position:0px -350px;*/
+}
+
+.body-login .login-content {
+    width: 90vw;
+    margin: 0px auto;
+    padding: 4% 0px;
+    text-align: center;
+}
+
+.body-login .login-content > .row {
+    margin-top: 5vh;
+}
+
+.body-login .login-content figure img {
+    width: 25vw;
+}
+
+/*.body-login .login-content a {
+    color: #FCC217;
+    text-shadow: 1px 1px 1px #727272;
+}*/
+
+.body-login .login-content form p {
+    position: relative;
+}
+
+.body-login .login-content form span {
+    position: absolute;
+    top: 3.5vh;
+    left: 2vw;
+    margin: 0px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 6vw;
+}
+
+.body-login .login-content form .username span {
+    /*width: 5.5vw;*/
+    
+}
+
+.body-login .login-content form input {
+    width: 100%;
+    height: 12vh;
+    margin: 0px;
+    padding: 0vh 2vw 0px 7vh;
+    border: 0px none;
+    background-color: transparent;
+    border-bottom: .5vw solid #CCC;
+    color: #FFF;
+    font-size: 6vw;
+    outline: none;
+    box-shadow: none;
+}
+
+.body-login .login-content form input[placeholder] {
+/*    color: #555;
+    font-weight: 600;*/
+}
+
+/*.body-login .login-content form .username input {
+    /*-webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}*/
+
+.body-login .login-content form .password input {
+    /*-webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: .5vw solid #CCC;*/
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+.body-login .login-content form .actions a {
+    color: #FFF;
+}
+
+/***** Class - container *****/
+.container {
+    margin: 25px 0px;
+}
+
+/********* Glyphicons ********/
+.icnglyp {
+    font-family: "Linearicons";
+}

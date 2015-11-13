@@ -500,6 +500,8 @@
     <Content Include="Scripts\less-1.5.1.js" />
     <Content Include="Scripts\less-1.5.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\gosolar\WebHome.js" />
     <None Include="Service References\ServiceReference1\Service1.disco" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
@@ -507,8 +509,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Scripts\npm.js" />
-    <Content Include="Scripts\gosolar\WebHome.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -553,6 +553,16 @@
     <Content Include="Views\Shared\_html5shiv.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\NewReferral.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\Panel\Index.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\int32.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Customer.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Panel\CustomerDetail.cshtml" />
+    <Content Include="Views\Shared\_MobileLayout.cshtml" />
+    <Content Include="Views\Shared\_MobileLoginLayout.cshtml" />
+    <Content Include="Views\Rewards\Index.cshtml" />
+    <Content Include="Views\Partials\_ChangePasswordPartial.cshtml" />
     <None Include="Service References\ServiceReference1\Service1.wsdl" />
     <None Include="Service References\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>
@@ -563,25 +573,15 @@
     <None Include="Service References\ServiceReference1\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceReference1\WebApp.ServiceReference1.Customer.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Views\Map\Index.cshtml" />
-    <Content Include="Service References\ServiceReference1\WebApp.ServiceReference1.Address.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="Service References\ServiceReference1\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Views\Panel\Index.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\int32.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Customer.cshtml" />
-    <Content Include="Views\Account\ChangePassword.cshtml" />
-    <Content Include="Views\Panel\CustomerDetail.cshtml" />
-    <Content Include="Views\Shared\_MobileLayout.cshtml" />
-    <Content Include="Views\Shared\_MobileLoginLayout.cshtml" />
-    <Content Include="Views\Rewards\Index.cshtml" />
-    <Content Include="Views\Partials\_ChangePasswordPartial.cshtml" />
+    <Content Include="Service References\ServiceReference1\WebApp.ServiceReference1.Address.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\WebApp.ServiceReference1.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

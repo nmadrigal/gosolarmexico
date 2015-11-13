@@ -10,16 +10,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/ServiceApp.dll">
-      <publishTime>02/04/2015 13:39:42</publishTime>
+      <publishTime>11/11/2015 13:02:22</publishTime>
     </File>
     <File Include="Service1.svc">
-      <publishTime>10/03/2014 13:32:25</publishTime>
+      <publishTime>06/15/2015 13:39:22</publishTime>
     </File>
     <File Include="SolarContext.dbml">
-      <publishTime>01/23/2015 13:08:34</publishTime>
+      <publishTime>06/15/2015 13:39:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/04/2015 13:40:44</publishTime>
+      <publishTime>11/13/2015 12:26:33</publishTime>
     </File>
   </ItemGroup>
 </Project>

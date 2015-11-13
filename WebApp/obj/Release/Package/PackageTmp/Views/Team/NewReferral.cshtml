@@ -1,0 +1,173 @@
+﻿@model WebApp.Models.CustomerModel
+
+@{
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+    ViewBag.Title = "Nuevo referido";
+}
+
+@using (Html.BeginForm("AddReferral", "Team", FormMethod.Post))
+{    
+    <div class="container">
+       @* <div class="row">
+            <div class="small-6">
+                <a href="@Url.Action("Index", "Team")">
+                    <img src="~/Images/appbar.arrow.left.png" /></a>
+            </div>
+            <div class="col-xs-4">
+                <span style="color: white; font-size: large">Nuevo</span>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>*@
+        <div class="row">
+            @*<div class="small-12 medium-6 large-6 columns">*@
+                @*<div class="row">*@
+                    <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            @Html.LabelFor(m => m.LastName)
+                            @Html.TextBoxFor(m => m.LastName, "Requerido", new { @placeholder = "Apellido paterno" })
+                        </p>
+                        @*@Html.ValidationMessageFor(m => m.LastName, "Requerido")*@
+                    </div>
+               @* </div>
+                <div class="row">*@
+                    <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            <label>Apellido materno</label>
+                            <input type="text" placeholder="Apellido materno" />
+                        </p>
+                    </div>
+               @* </div>
+                <div class="row">*@
+                    <div class="small-12 medium-6 large-4 columns">
+                        <p>
+                            @Html.LabelFor(m => m.Name)
+                            @Html.TextBoxFor(m => m.Name, new { @placeholder = "Nombre (s)" })
+                        </p>   
+                        @*@Html.ValidationMessageFor(m => m.Name, "Requerido")*@             
+                    </div>
+                @*</div>*@
+            @*</div>*@
+            @*<div class="small-12 medium-6 large-6 columns">
+                <div class="row">*@
+                    <div class="small-12 medium-6 large-5 columns">
+                        <p>
+                            @Html.LabelFor(m => m.Email)            
+                            @Html.TextBoxFor(m => m.Email, new { @placeholder = "Correo" })
+                        </p>                
+                        @*@Html.ValidationMessageFor(m => m.Email, "Requerido")*@                
+                    </div>  
+                @*</div>
+                <div class="row">  *@  
+                    <div class="small-6 medium-5 large-3 columns">
+                        <p>
+                            @Html.LabelFor(m => m.Phone)           
+                            @Html.TextBoxFor(m => m.Phone, new { @placeholder = "Telefono" })
+                        </p>
+                    </div>
+               @* </div>
+                <div class="row">*@
+                    <div class="small-6 medium-2 large-2 columns">
+                        <p>
+                            <label>Edad</label>
+                            <input type="number" min="17" max="90" value="18"/>
+                        </p>
+                    </div>
+                @*</div>*@
+            @*</div>*@
+        </div>
+        
+    
+        @Html.ValidationSummary(true)
+        <div class="row text-center">
+            <div class="small-12 medium-12 large-12">
+                <p>
+                    <a href="#" class="button small secondary radius get-address" data-reveal-id="getAddressModal">Obtener direccion</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="button radius expand">Agregar</button>
+        </div>
+    </div>    
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+}
+
+<div id="getAddressModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      @*<h2 id="modalTitle">Awesome. I have it.</h2>*@
+      <div class="row">           
+            <div class="small-12 medium-5 large-5 columns">
+                <p>
+                    @*@Html.LabelFor(m => m.Street)*@                
+                    @Html.TextBoxFor(m => m.Street, new { @placeholder = "Calle", @disabled = "disabled" })
+                </p>                
+                @*@Html.ValidationMessageFor(m => m.Street, "Requerido")*@              
+            </div>
+            <div class="small-12 medium-2 large-2 columns">
+                <p>
+                    @*@Html.LabelFor(m => m.ExternalNum)*@
+                    @Html.TextBoxFor(m => m.ExternalNum, new { @placeholder = "Numero", @disabled = "disabled" })
+                </p>
+                @*@Html.ValidationMessageFor(m => m.ExternalNum, "Requerido")*@
+            </div>                
+            <div class="small-12 medium-5 large-5 columns">
+                <p>
+                    @*@Html.LabelFor(m => m.ResidentialArea)*@
+                    @Html.TextBoxFor(m => m.ResidentialArea, new { @placeholder = "Colonia", @disabled = "disabled" })
+                </p>                
+                @*@Html.ValidationMessageFor(m => m.ResidentialArea, "Requerido")*@        
+            </div>  
+        </div>
+        <div class="row">  
+            <div class="small-12 medium-5 large-5 columns">
+                <p>
+                    @*@Html.LabelFor(m => m.City)*@               
+                    @Html.TextBoxFor(m => m.City, new { @placeholder = "Ciudad", @disabled = "disabled" })
+                </p>             
+                @*@Html.ValidationMessageFor(m => m.City, "Requerido")*@                                                
+            </div>
+            <div class="small-12 medium-4 large-4 columns">                    
+                <p>
+                    @*@Html.LabelFor(m => m.State)*@              
+                    @Html.TextBoxFor(m => m.State, new { @placeholder = "Estado", @disabled = "disabled" })
+                </p>
+                @*@Html.ValidationMessageFor(m => m.State, "Requerido")*@
+               
+            </div>
+            <div class="small-12 medium-3 large-3 columns">
+                <p>
+                    @*@Html.LabelFor(m => m.ZipCode)*@                
+                    @*@Html.TextBoxFor(m => m.ZipCode, new { @placeholder = "Codigo postal", @disabled = "disabled" })*@
+                </p>               
+                @*@Html.ValidationMessageFor(m => m.ZipCode, "Requerido")*@
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 medium-12 large-12">
+                <div id="map-canvas-address" class="map-canvas-sm"></div>
+            </div>
+        </div>
+        <div class="row">
+            @*<div class="small-12 medium-12 large-12 columns">*@
+                <div class="button-group text-center panel clearfix">
+                    <div class="small-12 medum-6 large-6 columns">
+                        <a href="#" class="button expand success radius get-address-data">Aceptar</a>
+                    </div>
+                    <div class="small-12 medum-6 large-6 columns">
+                        <a href="#" class="button expand radius btn-close-modal" aria-label="Close">Cancel</a>
+                    </div>
+                </div>
+            @*</div>*@
+        </div>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+<script>
+    $(".tab-bar .left-small .menu-icon").hide();
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+</script>

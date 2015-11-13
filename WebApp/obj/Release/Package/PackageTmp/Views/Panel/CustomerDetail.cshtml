@@ -1,0 +1,74 @@
+﻿@model WebApp.Models.CustomerCompleteModel
+@{
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
+<div class="container-fluid">
+    @*<div class="row">
+        <div class="col-xs-4">
+            <a href="@Url.Action("Index", "Panel")">
+                <img src="~/Images/appbar.arrow.left.png" style="width: 60px; height: 60px" /></a>
+        </div>
+        <div class="col-xs-4">
+            <span style="color: white; font-size: large">Detalle de usuario</span>
+        </div>
+        <div class="col-xs-4">
+        </div>
+    </div>*@
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            <h4 class="panel">@Html.DisplayFor(m => m.Name) @Html.DisplayFor(m => m.LastName)</h4>
+            <ul class="panel">
+                <li class="">
+                    <h5 class="postifx">@Html.DisplayFor(m => m.Email)</h5>
+                </li>
+                <li class="">
+                    <span class="postifx">@Html.DisplayFor(m => m.Phone) @Html.DisplayFor(m => m.Mobile)</span>
+                </li>
+                <li class=""><span>@Html.DisplayFor(m => m.Address) @Html.DisplayFor(m => m.ExtNum) @Html.DisplayFor(m => m.IntNum)</span></li>
+                <li class=""><span>@Html.DisplayFor(m => m.ResidentialArea)</span></li>
+                <li class=""><span>@Html.DisplayFor(m => m.City), @Html.DisplayFor(m => m.State)</span></li>
+                <li class=""><span>@Html.DisplayFor(m => m.ZipCode)</span></li>
+
+            </ul>
+            <label></label>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div style="color: white; font-size: medium">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".tab-bar .left-small .menu-icon").hide();
+    $(".tab-bar .left-small .icn-arrow-left").bind("click", function (e) {
+        e.preventDefault();
+        window.history.back();
+    });
+</script>

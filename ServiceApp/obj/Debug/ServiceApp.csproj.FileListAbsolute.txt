@@ -7,3 +7,7 @@ C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.dll
 C:\projects\GoSolarMexico\ServiceApp\bin\ServiceApp.pdb
 C:\projects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.dll
 C:\projects\GoSolarMexico\ServiceApp\obj\Debug\ServiceApp.pdb
+C:\Github\gosolarmexico\ServiceApp\bin\ServiceApp.dll
+C:\Github\gosolarmexico\ServiceApp\bin\ServiceApp.pdb
+C:\Github\gosolarmexico\ServiceApp\obj\Debug\ServiceApp.dll
+C:\Github\gosolarmexico\ServiceApp\obj\Debug\ServiceApp.pdb
