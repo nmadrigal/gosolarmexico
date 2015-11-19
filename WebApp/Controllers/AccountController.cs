@@ -104,7 +104,7 @@ namespace WebApp.Controllers
             FormsAuthentication.SignOut();
             //WebSecurity.Logout();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         //

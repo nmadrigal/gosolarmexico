@@ -238,7 +238,7 @@ a.link-primary:focus {
 
 .actions ul li {
     text-align: right;
-    margin: 10px 0px;
+    margin: 2vh 0px;
 }
 
 /* Class - tab-bar */
@@ -571,7 +571,7 @@ a.link-primary:focus {
 .main-menu a {
     flex-direction: column;
     width: 100%;    
-    height: 25vh;
+    padding: 4vh 0px;
     text-align: center;
     box-shadow: none;    
 }
@@ -653,7 +653,7 @@ a.link-primary:focus {
 }
 
 .rewards .panel {
-    background-color: #D2D2BE;
+    background-color: #FFF;
 }
 
 .rewards .first {
@@ -665,7 +665,7 @@ a.link-primary:focus {
 .rewards span {
     font-size: 24px;
     font-weight: 700;
-    color: #FFF;
+    color: #555;
 }
 
 /* Class - map-canvas */

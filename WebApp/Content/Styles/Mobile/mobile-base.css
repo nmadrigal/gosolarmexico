@@ -107,7 +107,8 @@ h3 {
 
 body {
     background-color: #EEE;
-    color: #535353;     
+    color: #535353; 
+    zoom: 1;    
 }
 
 #body {
@@ -148,6 +149,10 @@ header .container-fluid {
     height: 100%;
 }
 
+.off-canvas-wrap .inner-wrap section .main-menu .row {
+    max-width: inherit;
+}
+
 .right-off-canvas-menu {
     top: -11vh;
     height: 100vh;
@@ -174,7 +179,7 @@ header .container-fluid {
 }
 
 .body-login .login-container {
-    height: 100vh;
+    min-height: 100vh;
     background: url("/Images/bg-login.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,11 +189,12 @@ header .container-fluid {
 .body-login .login-content {
     width: 90vw;
     margin: 0px auto;
-    padding: 4% 0px;
+    padding: 4vh 0px;
     text-align: center;
 }
 
 .body-login .login-content > .row {
+    max-width: inherit;
     margin-top: 5vh;
 }
 
@@ -202,17 +208,23 @@ header .container-fluid {
 }*/
 
 .body-login .login-content form p {
-    position: relative;
+    position: relative;    
+}
+
+.body-login .login-content form p button.expand {
+    font-size: 3vw;
 }
 
 .body-login .login-content form span {
-    position: absolute;
-    top: 3.5vh;
+    float: left;
+    position: relative;
+    top: 9.5vh;
     left: 2vw;
     margin: 0px;
     color: #FFF;
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 5vw;
+    line-height: 4vw;
 }
 
 .body-login .login-content form .username span {
@@ -222,14 +234,14 @@ header .container-fluid {
 
 .body-login .login-content form input {
     width: 100%;
-    height: 12vh;
+    height: 15vh;
     margin: 0px;
-    padding: 0vh 2vw 0px 7vh;
+    padding: 0vh 2vw 0px 10vw;
     border: 0px none;
     background-color: transparent;
     border-bottom: .5vw solid #CCC;
     color: #FFF;
-    font-size: 6vw;
+    font-size: 5vw;
     outline: none;
     box-shadow: none;
 }
@@ -264,6 +276,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .body-login .login-content form .actions a {
     color: #FFF;
+    font-size: 3vw;
 }
 
 /***** Class - container *****/
