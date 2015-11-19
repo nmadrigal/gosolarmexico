@@ -3,3 +3,6 @@
 WebApp/obj/Release/WebApp.dll
 WebApp/obj/Release/WebApp.pdb
 WebApp/bin/WebApp.pdb
+*.dll
+WebApp/bin/WebApp.pdb
+*.dll
