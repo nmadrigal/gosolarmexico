@@ -73,12 +73,12 @@ namespace WebApp.Controllers
             {
                 service = new Service1Client();
 
-                //if (service.UserAuthentication(model.UserName, model.Password))
-                //{
+                if (service.UserAuthentication(model.UserName, model.Password))
+                {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);
 
                     return RedirectToAction("Index", "Ambassador");
-                //}
+                }
 
                 //Proxy proxy = new Proxy();
 
@@ -88,7 +88,7 @@ namespace WebApp.Controllers
                 //}                
             }
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "The user name or password provided is incorrect.");
+            ModelState.AddModelError(string.Empty, "The user name or password provided is incorrect.");
             return View(model);
         }
 
