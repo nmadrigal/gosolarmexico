@@ -1,6 +1,8 @@
 ﻿
 @model List<WebApp.ServiceReference1.Customer>
-
+@{
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
 @using (Html.BeginForm("UpdateCustomerStatus", "Panel", FormMethod.Post))
 {	
     <div class="container admin">
