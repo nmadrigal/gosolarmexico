@@ -284,6 +284,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 25px 0px;
 }
 
+.validation-summary-errors {
+    padding: 2.5vh 0px;
+    background: #FA4241;
+    color: #FFF;
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
 /********* Glyphicons ********/
 .icnglyp {
     font-family: "Linearicons";
