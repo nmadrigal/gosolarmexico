@@ -139,18 +139,19 @@ h1, h2, h3, h4 {
     margin: 5px 0px;
     font-family: Impact, 'Segoe UI', sans-serif, Arial;
     font-weight: 500;
+    text-align: center;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 7vw;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 5vw;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 #body section {

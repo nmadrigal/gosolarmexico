@@ -84,7 +84,7 @@ input.input-validation-error:-ms-input-placeholder {
 #body section.main-slider {
     height: 100vh;
     padding: 0px;
-    background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;
+    /*background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -118,7 +118,8 @@ section.box-menu{
 section.box-menu .thumbnail {
     display: inline-block;
     width: 100%;
-    padding: 25px;    
+    margin: 0px;
+    padding: 5vh 2.5vw;    
     cursor: pointer;
 }
 
@@ -127,8 +128,8 @@ section.box-menu .thumbnail .caption {
     float: left;
     min-width: 150px;
     max-width: 70%;
-    height: 270px;
-    padding: 40px 0px;
+    height: 60vh;
+    padding: 4vh 0px;
     text-align: left;
     color: #7E7E7E;    
 }
@@ -141,7 +142,7 @@ section.box-menu .thumbnail .caption h2 {
     padding-bottom: 10px;
     text-align: left;
     border-bottom: 1px solid #CCC;
-    line-height: 40px;
+    line-height: 4vw;
 }
 
 section.box-menu .thumbnail img {
@@ -150,6 +151,41 @@ section.box-menu .thumbnail img {
     width: 25%;
     margin: 40px 0px;
 }
+
+/******************************************************************************/
+/***************************** section content *********************************/
+.section-content {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.section-content h1 {
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.section-content div ol {
+    padding: 5rem 30px;
+}
+
+.section-content div ol li {
+    margin-bottom: 3.5rem;
+    list-style: decimal;
+}
+
+.section-content img {
+    width: 100%;
+}
+
+.section-content.how-it-works {
+    background: #00CDFC;
+}
+
+.section-content.about-us {
+    /*background: #FFA500;*/
+}
+
+/******************************************************************************/
 
 /***** Class - contact *****/
 section.contact h1 {
@@ -277,7 +313,7 @@ html body .message-container .message-content.error h1 {
 /***** Class - box-info *****/
 .box-info {
     position: relative;
-    margin-top: -129px;    
+    /*margin-top: -129px;*/    
     padding: 20px;
     background-color: #EEE;
     text-align: center;

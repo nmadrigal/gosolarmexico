@@ -10,11 +10,13 @@ namespace WebApp
         {
             bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
                "~/Content/bootstrap/bootstrap.css",
-               "~/Content/bootstrap/bootstrap.min.css"));
+               "~/Content/bootstrap/bootstrap.min.css",
+               "~/Content/foundation/orbitCarousel.css"));
 
             bundles.Add(new StyleBundle("~/Content/foundationcss").Include(
                "~/Content/foundation/normalize.css",
-               "~/Content/foundation/foundation.min.css"));
+               "~/Content/foundation/foundation.min.css",
+               "~/Content/foundation/orbitCarousel.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/Styles/base.css",

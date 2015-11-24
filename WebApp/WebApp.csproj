@@ -243,6 +243,7 @@
     <Content Include="Content\fonts\Linearicons\Linearicons.svg" />
     <Content Include="Content\foundation\foundation.min.css" />
     <Content Include="Content\foundation\normalize.css" />
+    <Content Include="Content\foundation\orbitCarousel.css" />
     <Content Include="Content\medium.css" />
     <Content Include="Content\small.css" />
     <Content Include="Content\Styles\base.css" />
@@ -310,6 +311,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\bg-solarHome.gif" />
+    <Content Include="Images\howItWorks.png" />
     <Content Include="Images\loading-lg.GIF" />
     <Content Include="Images\loading-sm.GIF" />
     <Content Include="favicon-16x16.png" />
