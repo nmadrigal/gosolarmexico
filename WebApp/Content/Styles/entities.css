@@ -82,7 +82,7 @@ input.input-validation-error:-ms-input-placeholder {
 
 /* Section - main-slider */
 #body section.main-slider {
-    height: 100vh;
+    /*height: 100vh;*/
     padding: 0px;
     /*background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;*/
     background-size: cover;
