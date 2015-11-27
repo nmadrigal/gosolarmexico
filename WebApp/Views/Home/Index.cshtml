@@ -67,17 +67,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <figure class="thumbnail grayscale-filter">                    
-                    <figcaption class="caption">
-                        <h3>Paneles solares, ¿Cuanto cuestan?</h3>
-                        <h4>El costo depende de la energía que consumas en tu hogar...</h4>
-                    </figcaption>
-                    <img src="/Images/icn-solarenergy.png" alt="Solar Energy" />
-                </figure>
-                
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <a href="#howItWorks">
                     <figure class="thumbnail grayscale-filter">                    
                         <figcaption class="caption">
@@ -88,14 +78,38 @@
                     </figure>
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <figure class="thumbnail grayscale-filter">                    
-                    <figcaption class="caption">
-                        <h3>Cambiemos a Mexico y el mundo</h3>
-                        <h4>La energía solar es un buen negocio, aprovéchalo aquí te decimos como...</h4>
-                    </figcaption>
-                    <img src="/Images/icn-energy.png" alt="Energy" />
-                </figure>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <a href="#howMuch">
+                    <figure class="thumbnail grayscale-filter">                    
+                        <figcaption class="caption">
+                            <h3>Paneles solares, ¿Cuanto cuestan?</h3>
+                            <h4>El costo depende de la energía que consumas en tu hogar...</h4>
+                        </figcaption>
+                        <img src="/Images/icn-solarenergy.png" alt="Solar Energy" />
+                    </figure>
+                </a>
+            </div>         
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <a href="#changeTheWorld">
+                    <figure class="thumbnail grayscale-filter">                    
+                        <figcaption class="caption">
+                            <h3>Cambiemos a Mexico y el mundo</h3>
+                            <h4>La energía solar es un buen negocio, aprovéchalo aquí te decimos como...</h4>
+                        </figcaption>
+                        <img src="/Images/icn-energy.png" alt="Energy" />
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <a href="#Ambassador">
+                    <figure class="thumbnail grayscale-filter">                    
+                        <figcaption class="caption">
+                            <h3>Embajador Solar</h3>
+                            <h4>Como embajador solar tendrás la oportunidad de unirte al movimiento con personas afines que creen en el cambio...</h4>
+                        </figcaption>
+                        <img src="/Images/icn-solarAmbassador.png" alt="Energy" />
+                    </figure>
+                </a>
             </div>
         </div>
     </section>
@@ -134,5 +148,64 @@
         </div>
 
     </section>
+    
+    @*How much*@
+    <section id="howMuch" class="section-content">
+        <h1>¿Cuanto cuestan los paneles solares?</h1>
+        <div>            
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+
+                </div>
+            </div>
+        </div>
+    </section>
     @*Contact*@
     @Html.Partial("~/Views/Partials/_Contact.cshtml")
+
+    @*location*@
+    <section class="section-content locations">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Dirección de oficinas en México</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#location1" aria-controls="location1" role="tab" data-toggle="tab">Monterrey</a></li>
+                <li role="presentation"><a href="#location2" aria-controls="location2" role="tab" data-toggle="tab">Jalisco</a></li>
+                <li role="presentation"><a href="#location3" aria-controls="location3" role="tab" data-toggle="tab">Queretaro</a></li>
+                <li role="presentation"><a href="#location4" aria-controls="location4" role="tab" data-toggle="tab">Cancún</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                 <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="location1">
+                        <h4>Monterrey - Torre Pabellón M</h4>
+                        <div id="mapCanvas1" class="map-canvas-office"></div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="location2">
+                        <h4>Jalisco - Torre Skalia</h4>
+                        <div id="mapCanvas2" class="map-canvas-office"></div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="location3">
+                        <h4>Querétaro - Complejo Central Park</h4>
+                        <div id="mapCanvas3" class="map-canvas-office"></div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="location4">
+                        <h4>Cancún - Malecon Americas</h4>
+                        <div id="mapCanvas4" class="map-canvas-office"></div>
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>

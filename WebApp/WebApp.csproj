@@ -312,6 +312,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\bg-solarHome.gif" />
     <Content Include="Images\howItWorks.png" />
+    <Content Include="Images\icn-solarAmbassador.png" />
     <Content Include="Images\loading-lg.GIF" />
     <Content Include="Images\loading-sm.GIF" />
     <Content Include="favicon-16x16.png" />

@@ -19,9 +19,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+a {
+    color: #FB8132;
+}
 
 a:hover {
     text-decoration: none;
+    color: #000;
 } 
 
 /* HTML5 display-role reset for older browsers */
@@ -137,21 +141,21 @@ footer p {
 
 h1, h2, h3, h4 {
     margin: 5px 0px;
-    font-family: Impact, 'Segoe UI', sans-serif, Arial;
+    font-family: 'Segoe UI', sans-serif, Arial;
     font-weight: 500;
     text-align: center;
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: 6vw;
 }
 
 h2 {
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #body section {
@@ -204,7 +208,7 @@ section {
 
 #mainNavigation ul li a {
     padding: 10px 5px;
-    color: #7E7E7E;
+    color: #FB8132/*7E7E7E*/;
     font-size: 18px;    
 }
 
@@ -227,7 +231,7 @@ section {
     display: block;
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 50vh;
     margin: 20px 0px;
     /*-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
