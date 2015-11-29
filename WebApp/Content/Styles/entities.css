@@ -156,34 +156,84 @@ section.box-menu .thumbnail img {
 /***************************** section content *********************************/
 .section-content {
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .section-content h1 {
-    margin-bottom: 20px;
+    margin-bottom: 7vh;
     color: #FFF;
 }
 
+.section-content p {
+    margin: 3vh 0px;
+    line-height: 3vw;
+}
+
 .section-content div ol {
-    padding: 5rem 30px;
+    padding: 5rem 5vw;
+    color: #FFA501;
 }
 
 .section-content div ol li {
     margin-bottom: 3.5rem;
     list-style: decimal;
+    font-size: 2.2vw;
+    font-weight: 600;
 }
 
 .section-content img {
     width: 100%;
 }
 
-.section-content.how-it-works {
-    background: #00CDFC;
-}
-
-.section-content.about-us {
+.section-content.about-us h2 {
+    margin: 10vh 0px;
     /*background: #FFA500;*/
 }
+
+.section-content.about-us .panel p, 
+.section-content.about-us .panel span {
+    display: block;
+    color: #535353;
+    text-align: center;
+}
+
+.section-content.how-it-works {
+    background: #D7D3CB;
+}
+
+.section-content.how-it-works h1 {
+    /*color: #E0DCD4;*/
+}
+
+.section-content.how-it-works label {
+    display: block;
+}
+
+.section-content.how-it-works span {
+    font-size: 1.5vw;
+    color: #FFF;
+}
+
+.section-content.how-much {
+    background: #002846;
+    color: #E0DCD4;
+}
+
+.section-content.how-much h1 {
+    /*text-align: center;*/
+    color: #E0DCD4;
+}
+
+.section-content.change-the-world h1 {
+    color: #000;
+}
+
+.section-content.change-the-world {
+    color: #000;
+    background: url("/Images/bg-solar-panel.png");
+    background-size: cover;
+    background-position: 0px 0px;
+} 
 
 .section-content.contact h1 {
     margin: 15px 0px;
@@ -256,12 +306,12 @@ section.box-menu .thumbnail img {
 .basic-gradient {
     height: 100%;
     background: rgb(250,66,65); /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%, rgba(255,255,0,.8) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(250,66,65,.8)), color-stop(100%,rgba(255,255,0,.8))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* IE10+ */
-    background: linear-gradient(135deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* W3C */
+    background: -moz-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%, rgba(255, 223, 0, 0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(250,66,65,.8)), color-stop(100%,rgba(255,223,0,.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4241', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
