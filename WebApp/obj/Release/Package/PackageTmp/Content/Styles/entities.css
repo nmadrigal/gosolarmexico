@@ -82,13 +82,42 @@ input.input-validation-error:-ms-input-placeholder {
 
 /* Section - main-slider */
 #body section.main-slider {
-    height: 100vh;
+    min-height: inherit;
+    height: 80vh;
+    margin-top: 55px;
     padding: 0px;
-    background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;
+    /*background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+section.main-slider .item {
+    height: 80vh;
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+      background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section.main-slider .item-1 {
+    background-image: url("/Images/img-solar1.jpg");
+}
+
+section.main-slider .item-2 {
+    background-image: url("/Images/img-solar2.jpg");
+}
+
+section.main-slider .item-3 {
+    background-image: url("/Images/img-solar3.jpg");
+}
+
+section.main-slider .item-4 {
+    background-image: url("/Images/img-solar4.jpg");
 }
 
 section.main-slider .main-logo img {
@@ -118,7 +147,8 @@ section.box-menu{
 section.box-menu .thumbnail {
     display: inline-block;
     width: 100%;
-    padding: 25px;    
+    margin: 2vh 0px;
+    padding: 5vh 2.5vw;    
     cursor: pointer;
 }
 
@@ -127,8 +157,8 @@ section.box-menu .thumbnail .caption {
     float: left;
     min-width: 150px;
     max-width: 70%;
-    height: 270px;
-    padding: 40px 0px;
+    height: 45vh;
+    padding: 4vh 0px;
     text-align: left;
     color: #7E7E7E;    
 }
@@ -141,7 +171,7 @@ section.box-menu .thumbnail .caption h2 {
     padding-bottom: 10px;
     text-align: left;
     border-bottom: 1px solid #CCC;
-    line-height: 40px;
+    line-height: 4vw;
 }
 
 section.box-menu .thumbnail img {
@@ -151,24 +181,138 @@ section.box-menu .thumbnail img {
     margin: 40px 0px;
 }
 
-/***** Class - contact *****/
-section.contact h1 {
-    margin: 15px 0px;
+/******************************************************************************/
+/***************************** section content *********************************/
+.section-content {
+    color: #FFF;
+    font-size: 1.5vw;
 }
 
-section.contact form p {
+.section-content h1 {
+    margin-bottom: 7vh;
+    color: #FFF;
+}
+
+.section-content p {
+    margin: 3vh 0px;
+    line-height: 3vw;
+}
+
+.section-content div ol {
+    padding: 5rem 5vw;
+    color: #FFA501;
+}
+
+.section-content div ol li {
+    margin-bottom: 3.5rem;
+    list-style: decimal;
+    font-size: 2.2vw;
+    font-weight: 600;
+}
+
+.section-content img {
+    width: 100%;
+}
+
+.section-content.about-us h2 {
+    margin: 10vh 0px;
+    /*background: #FFA500;*/
+}
+
+.section-content.about-us .panel p, 
+.section-content.about-us .panel span {
+    display: block;
+    color: #535353;
+    text-align: center;
+}
+
+.section-content.how-it-works {
+    background: #D7D3CB;
+}
+
+.section-content.how-it-works h1 {
+    /*color: #E0DCD4;*/
+}
+
+.section-content.how-it-works label {
+    display: block;
+}
+
+.section-content.how-it-works span {
+    font-size: 1.5vw;
+    color: #FFF;
+}
+
+.section-content.how-much {
+    background: #002846;
+    color: #E0DCD4;
+}
+
+.section-content.how-much h1 {
+    /*text-align: center;*/
+    color: #E0DCD4;
+}
+
+.section-content.how-much li {
+    margin: 1vh 0px;
+}
+
+.section-content.change-the-world h1 {
+    color: #000;
+}
+
+.section-content.change-the-world {
+    color: #000;
+    background: url("/Images/bg-solar-panel.png");
+    background-size: cover;
+    background-position: 0px 0px;
+} 
+
+.section-content.contact h1 {
+    margin: 15px 0px;
+    color: #535353;
+}
+
+.section-content.contact form p {
     margin-bottom: 15px;
 }
 
-section.contact form p label {
+.section-content.contact form p label {
     margin-bottom: 10px;
+    color: #535353;
 }
 
-section.contact form p textarea {
+.section-content.contact form p textarea {
     max-width: 100%;
     height: 100px;
     max-height: 150px;
 }
+
+.section-content.ambassador {
+    background: rgb(250, 121, 65);
+}
+
+.section-content.locations h1 {
+    color: #535353;
+}
+
+.section-content.locations h3 {
+    color: #727272;
+}
+
+.section-content.locations p {
+    line-height: 2vh;
+    color: #727272;
+}
+
+
+.section-content.locations .nav-tabs .active a {
+    background: #FB8132;
+    border-color: #FB8132;
+    color: #FFF;
+}
+
+/******************************************************************************/
 
 /* Filter - sepia */
 .sepia-filter {
@@ -211,12 +355,12 @@ section.contact form p textarea {
 .basic-gradient {
     height: 100%;
     background: rgb(250,66,65); /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%, rgba(255,255,0,.8) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(250,66,65,.8)), color-stop(100%,rgba(255,255,0,.8))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* IE10+ */
-    background: linear-gradient(135deg,  rgba(250,66,65,.8) 0%,rgba(255,255,0,.8) 100%); /* W3C */
+    background: -moz-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%, rgba(255, 223, 0, 0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(250,66,65,.8)), color-stop(100%,rgba(255,223,0,.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(250,66,65,.8) 0%,rgba(255,223,0,.8) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa4241', endColorstr='#ffff00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -277,7 +421,7 @@ html body .message-container .message-content.error h1 {
 /***** Class - box-info *****/
 .box-info {
     position: relative;
-    margin-top: -129px;    
+    /*margin-top: -129px;*/    
     padding: 20px;
     background-color: #EEE;
     text-align: center;
@@ -293,7 +437,8 @@ html body .message-container .message-content.error h1 {
 /****** Class - nav-horizontal *****/
 nav .nav-horizontal {
     display: inline-block;
-    float: left;
+    float: none;
+    width: 100%;
 }
 
 nav .nav-horizontal a {
@@ -302,10 +447,21 @@ nav .nav-horizontal a {
 
 nav .nav-horizontal li {    
     float: left;
-    margin: 0px 15px;
+    margin: 1vh 0px;
     list-style-type: square;
 }
 
+nav .nav-horizontal li:last-child {
+    list-style: none;
+}
+
+nav .nav-horizontal li ul li {
+    margin: 0px 10px;
+}
+
+nav .nav-horizontal li label {
+    vertical-align: top;
+}
 
 /***** Class - social-links *****/
 .social-links {
@@ -373,7 +529,7 @@ nav .nav-horizontal li {
 footer .social-links {
     display: inline-block;
     position: relative;
-    float: left;
+    /*float: left;*/
     margin: 0px;
 }
 

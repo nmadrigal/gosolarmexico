@@ -206,7 +206,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:07:33</publishTime>
     </File>
     <File Include="bin/WebApp.dll">
-      <publishTime>11/18/2015 23:52:28</publishTime>
+      <publishTime>11/30/2015 18:46:33</publishTime>
     </File>
     <File Include="bin/WebApp.pdb">
       <publishTime>06/12/2015 23:47:05</publishTime>
@@ -508,6 +508,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/foundation/normalize.css">
       <publishTime>11/14/2015 18:06:47</publishTime>
     </File>
+    <File Include="Content/foundation/orbitCarousel.css">
+      <publishTime>11/23/2015 21:57:47</publishTime>
+    </File>
     <File Include="Content/medium.css">
       <publishTime>11/14/2015 18:06:47</publishTime>
     </File>
@@ -518,10 +521,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:06:47</publishTime>
     </File>
     <File Include="Content/Styles/base.css">
-      <publishTime>11/14/2015 18:06:47</publishTime>
+      <publishTime>11/30/2015 20:32:52</publishTime>
     </File>
     <File Include="Content/Styles/entities.css">
-      <publishTime>11/14/2015 18:06:47</publishTime>
+      <publishTime>11/30/2015 21:45:45</publishTime>
     </File>
     <File Include="Content/Styles/fonts/fontawesome-webfont.woff">
       <publishTime>11/14/2015 18:06:47</publishTime>
@@ -554,7 +557,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/18/2015 23:49:22</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-entities.css">
-      <publishTime>11/18/2015 23:12:24</publishTime>
+      <publishTime>11/23/2015 21:56:45</publishTime>
     </File>
     <File Include="Content/Styles/Mobile/mobile-overrides.css">
       <publishTime>11/14/2015 18:06:47</publishTime>
@@ -787,6 +790,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/bg-login.png">
       <publishTime>11/14/2015 18:06:47</publishTime>
     </File>
+    <File Include="Images/bg-solar-panel.png">
+      <publishTime>11/28/2015 21:36:42</publishTime>
+    </File>
     <File Include="Images/bg-solarHome.gif">
       <publishTime>11/14/2015 18:06:47</publishTime>
     </File>
@@ -820,6 +826,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/icn-energy.png">
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
+    <File Include="Images/icn-solarAmbassador.png">
+      <publishTime>11/26/2015 21:04:56</publishTime>
+    </File>
     <File Include="Images/icn-solarenergy.png">
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
@@ -828,6 +837,39 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/iconsheet.png">
       <publishTime>11/14/2015 18:06:48</publishTime>
+    </File>
+    <File Include="Images/img-climate.jpg">
+      <publishTime>11/29/2015 20:23:09</publishTime>
+    </File>
+    <File Include="Images/img-floor.jpg">
+      <publishTime>11/29/2015 20:23:10</publishTime>
+    </File>
+    <File Include="Images/img-flora-fauna.jpg">
+      <publishTime>11/29/2015 20:23:11</publishTime>
+    </File>
+    <File Include="Images/img-geology.jpg">
+      <publishTime>11/29/2015 20:23:09</publishTime>
+    </File>
+    <File Include="Images/img-howItWorks.png">
+      <publishTime>11/27/2015 19:40:53</publishTime>
+    </File>
+    <File Include="Images/img-landscape.jpg">
+      <publishTime>11/29/2015 20:22:50</publishTime>
+    </File>
+    <File Include="Images/img-noise.jpg">
+      <publishTime>11/29/2015 20:22:50</publishTime>
+    </File>
+    <File Include="Images/img-solar1.jpg">
+      <publishTime>11/27/2015 19:07:46</publishTime>
+    </File>
+    <File Include="Images/img-solar2.jpg">
+      <publishTime>11/27/2015 19:07:46</publishTime>
+    </File>
+    <File Include="Images/img-solar3.jpg">
+      <publishTime>11/27/2015 19:16:18</publishTime>
+    </File>
+    <File Include="Images/img-solar4.jpg">
+      <publishTime>11/27/2015 19:07:46</publishTime>
     </File>
     <File Include="Images/info_icon.jpg">
       <publishTime>11/14/2015 18:06:48</publishTime>
@@ -1028,7 +1070,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
     <File Include="Scripts/gosolar/WebHome.js">
-      <publishTime>11/14/2015 18:06:48</publishTime>
+      <publishTime>11/29/2015 23:03:26</publishTime>
     </File>
     <File Include="Scripts/html5shiv.js">
       <publishTime>11/14/2015 18:06:48</publishTime>
@@ -1133,7 +1175,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2015 13:09:26</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>11/14/2015 18:06:48</publishTime>
+      <publishTime>11/30/2015 21:58:34</publishTime>
     </File>
     <File Include="Views/Map/Index.cshtml">
       <publishTime>11/14/2015 18:06:48</publishTime>
@@ -1148,7 +1190,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
     <File Include="Views/Partials/_Contact.cshtml">
-      <publishTime>11/14/2015 18:06:48</publishTime>
+      <publishTime>11/26/2015 22:34:55</publishTime>
+    </File>
+    <File Include="Views/Partials/_NoticeOfPrivacy.cshtml">
+      <publishTime>11/30/2015 19:41:55</publishTime>
     </File>
     <File Include="Views/Rewards/Index.cshtml">
       <publishTime>11/14/2015 18:06:48</publishTime>
@@ -1166,7 +1211,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>11/14/2015 18:06:48</publishTime>
+      <publishTime>11/30/2015 21:15:55</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>11/14/2015 18:06:48</publishTime>
@@ -1190,7 +1235,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 18:06:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/19/2015 00:01:09</publishTime>
+      <publishTime>11/30/2015 22:07:28</publishTime>
     </File>
   </ItemGroup>
 </Project>
