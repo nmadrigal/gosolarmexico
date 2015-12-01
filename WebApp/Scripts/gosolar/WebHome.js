@@ -28,7 +28,7 @@ Gosolar.Home = {};
             position: office1,
             map: officeMap1
         };
-        g.CreateMarker(markOptions1);
+        var marker1 = g.CreateMarker(markOptions1);
         ///////////////////////////////
         ////// office location 2///////
         var office2 = g.InitialMapPoint(20.707877, -103.415077);
@@ -43,7 +43,7 @@ Gosolar.Home = {};
             position: office2,
             map: officeMap2
         };
-        g.CreateMarker(markOptions2);
+        var marker2 = g.CreateMarker(markOptions2);
         ///////////////////////////////
         ////// office location 3 //////
         var office3 = g.InitialMapPoint(20.571138, -100.361708);
@@ -58,7 +58,7 @@ Gosolar.Home = {};
             position: office3,
             map: officeMap3
         };
-        g.CreateMarker(markOptions3);
+        var marker3 = g.CreateMarker(markOptions3);
         //////////////////////////////
         ////// office location 4 //////
         var office4 = g.InitialMapPoint(21.194001, -86.818827);
@@ -73,7 +73,36 @@ Gosolar.Home = {};
             position: office4,
             map: officeMap4
         };
-        g.CreateMarker(markOptions4);
+        var marker4 = g.CreateMarker(markOptions4);
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            e.target // newly activated tab
+            e.relatedTarget // previous active tab
+            var tabActive = e.target.attributes[0].value;
+            var reloadMap;
+            var reloadCenter;
+            if (tabActive.indexOf(1) != -1) {
+                reloadMap = officeMap1;
+                reloadCenter = marker1;
+            }
+            if (tabActive.indexOf(2) != -1){
+                reloadMap = officeMap2;
+                reloadCenter = marker2;
+            }
+            if (tabActive.indexOf(3) != -1){
+                reloadMap = officeMap3;
+                reloadCenter = marker3;
+            }
+            if (tabActive.indexOf(4) != -1){
+                reloadMap = officeMap4;
+                reloadCenter = marker4;
+            }
+
+            google.maps.event.trigger(reloadMap, 'resize');
+            reloadMap.setCenter(reloadCenter.getPosition());
+            //reloadMap.fitBounds(reloadCenter.lat(), reloadCenter.lng());
+            
+        })
     };
 
     g.InitialMapPoint = function (lat, lng) {
@@ -91,6 +120,7 @@ Gosolar.Home = {};
         });
 
         marker.setMap(markOptions.map);
+        return marker;
     };
 
     g.populateStatesList = function () {

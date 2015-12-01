@@ -318,6 +318,8 @@
     <Content Include="Images\img-flora-fauna.jpg" />
     <Content Include="Images\img-geology.jpg" />
     <Content Include="Images\img-howItWorks.png" />
+    <Content Include="Images\img-landscape.jpg" />
+    <Content Include="Images\img-noise.jpg" />
     <Content Include="Images\img-solar1.jpg" />
     <Content Include="Images\img-solar2.jpg" />
     <Content Include="Images\img-solar3.jpg" />
@@ -594,6 +596,7 @@
     <Content Include="Service References\ServiceReference1\WebApp.ServiceReference1.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Views\Partials\_NoticeOfPrivacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -44,7 +44,14 @@ namespace WebApp.Controllers
 
             return PartialView("~/Partials/_Contact");
         }
-    
+
+        public ActionResult Privacy()
+        {
+            ViewBag.Message = "Notice of Privacy";
+
+            return PartialView("~/Partials/_NoticeOfPrivacy");
+        }
+
         [HttpPost]
         public string ContactForm(ContactModel contact)
         {

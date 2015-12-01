@@ -82,13 +82,42 @@ input.input-validation-error:-ms-input-placeholder {
 
 /* Section - main-slider */
 #body section.main-slider {
-    /*height: 100vh;*/
+    min-height: inherit;
+    height: 80vh;
+    margin-top: 55px;
     padding: 0px;
     /*background: url("/Images/bg-solarHome.gif") no-repeat center top fixed;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+section.main-slider .item {
+    height: 80vh;
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+      background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section.main-slider .item-1 {
+    background-image: url("/Images/img-solar1.jpg");
+}
+
+section.main-slider .item-2 {
+    background-image: url("/Images/img-solar2.jpg");
+}
+
+section.main-slider .item-3 {
+    background-image: url("/Images/img-solar3.jpg");
+}
+
+section.main-slider .item-4 {
+    background-image: url("/Images/img-solar4.jpg");
 }
 
 section.main-slider .main-logo img {
@@ -128,7 +157,7 @@ section.box-menu .thumbnail .caption {
     float: left;
     min-width: 150px;
     max-width: 70%;
-    height: 60vh;
+    height: 45vh;
     padding: 4vh 0px;
     text-align: left;
     color: #7E7E7E;    
@@ -224,6 +253,10 @@ section.box-menu .thumbnail img {
     color: #E0DCD4;
 }
 
+.section-content.how-much li {
+    margin: 1vh 0px;
+}
+
 .section-content.change-the-world h1 {
     color: #000;
 }
@@ -255,12 +288,28 @@ section.box-menu .thumbnail img {
     max-height: 150px;
 }
 
+.section-content.ambassador {
+    background: rgb(250, 121, 65);
+}
+
 .section-content.locations h1 {
     color: #535353;
 }
 
 .section-content.locations h3 {
-    color: #000;
+    color: #727272;
+}
+
+.section-content.locations p {
+    line-height: 2vh;
+    color: #727272;
+}
+
+
+.section-content.locations .nav-tabs .active a {
+    background: #FB8132;
+    border-color: #FB8132;
+    color: #FFF;
 }
 
 /******************************************************************************/
@@ -388,7 +437,8 @@ html body .message-container .message-content.error h1 {
 /****** Class - nav-horizontal *****/
 nav .nav-horizontal {
     display: inline-block;
-    float: left;
+    float: none;
+    width: 100%;
 }
 
 nav .nav-horizontal a {
@@ -397,10 +447,21 @@ nav .nav-horizontal a {
 
 nav .nav-horizontal li {    
     float: left;
-    margin: 0px 15px;
+    margin: 1vh 0px;
     list-style-type: square;
 }
 
+nav .nav-horizontal li:last-child {
+    list-style: none;
+}
+
+nav .nav-horizontal li ul li {
+    margin: 0px 10px;
+}
+
+nav .nav-horizontal li label {
+    vertical-align: top;
+}
 
 /***** Class - social-links *****/
 .social-links {
@@ -468,7 +529,7 @@ nav .nav-horizontal li {
 footer .social-links {
     display: inline-block;
     position: relative;
-    float: left;
+    /*float: left;*/
     margin: 0px;
 }
 
